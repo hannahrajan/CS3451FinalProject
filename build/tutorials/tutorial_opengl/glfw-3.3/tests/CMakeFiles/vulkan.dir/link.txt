@@ -1,0 +1,1 @@
+/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/vulkan.dir/vulkan.c.o CMakeFiles/vulkan.dir/__/deps/glad_vulkan.c.o -o vulkan  ../src/libglfw3.a -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo

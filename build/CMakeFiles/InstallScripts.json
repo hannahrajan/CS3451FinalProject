@@ -1,0 +1,32 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/hrajan/cs3451/build/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a1/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a2/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a3/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a4/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a5/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a6/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a7/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a8/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/assignments/a9/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_camera/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_cpp101/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_hello_glsl/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_lighting/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_matrix/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_mesh/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_opengl/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_opengl/glfw-3.3/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_opengl/glfw-3.3/src/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_opengl/glfw-3.3/examples/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_opengl/glfw-3.3/tests/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_shader_programming/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_texture/cmake_install.cmake",
+		"/Users/hrajan/cs3451/build/tutorials/tutorial_transform/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
