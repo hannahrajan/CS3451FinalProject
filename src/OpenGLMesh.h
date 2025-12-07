@@ -97,16 +97,52 @@ class OpenGLTriangleMesh : public OpenGLMesh<TriangleMesh<3> >
 
 	Array<Vector4f> vtx_color;
 	Array<Vector3> vtx_normal;
+	bool move = false;
+	float step = 0.02;
 
 	GLfloat iTime=0;
+
+	void setMove(){
+		move = true;
+	}
+	void setStep(float st) {
+		step = st;
+	}
 
 	void setTime(GLfloat time) { iTime=time; }
 
 	void Set_Model_Matrix(const Eigen::Matrix<float, 4, 4>& _model_matrix)
 	{
 		for (int i = 0; i < 4; i++)
-			for (int j = 0; j < 4; j++)
+			for (int j = 0; j < 4; j++){
 				model_matrix[j][i] = _model_matrix(i, j); // j,i = i,j
+			}
+	}
+	void updateModelMatrix(){
+		//0=x, 1=y, 2=z
+		if (!move){ //so we can have meshes that don't rotate too
+			return;
+		}
+		Matrix4f temp;
+		temp << 0.,0.,0.,0.,
+			0.,0.,0.,0.,
+			0.,0.,0.,0.,
+			0.,0.,0.,0.;
+		for (int i = 0; i < 4; i++)
+			for (int j = 0; j < 4; j++)
+				temp(j,i) = model_matrix[i][j];
+		Matrix4f rotate;
+		rotate << cos(step), -sin(step), 0., 0.,
+				sin(step), cos(step), 0., 0.,
+				-0., 0., 1, 0.,
+				0., 0., 0., 1.;
+		temp = rotate * temp;
+		for (int i = 0; i < 4; i++)
+			for (int j = 0; j < 4; j++)
+				model_matrix[j][i] = temp(i,j);
+		//make this spin eventually based on iTime
+		model_matrix[3][0] += 3*step*cos(step); //scale speed and radius on step
+		model_matrix[3][1] += 3*step*sin(step);
 	}
 
 	void Set_Ka(const Vector3f& color) { ka[0] = color[0]; ka[1] = color[1]; ka[2] = color[2]; }
