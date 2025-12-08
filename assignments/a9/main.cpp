@@ -16,11 +16,13 @@
 
 #ifndef __Main_cpp__
 #define __Main_cpp__
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 #ifdef __APPLE__
 #define CLOCKS_PER_SEC 100000
 #endif
-
+#define DegreesToRadians(degrees) (degrees * M_PI / 180)
 class MyDriver : public OpenGLViewer
 {
     std::vector<OpenGLTriangleMesh *> mesh_object_array;
@@ -195,9 +197,9 @@ public:
 				-0., 0., -1, 0.,
 				0., 0., 0., 1.;
 			Matrix4f scale;
-			scale << 0.05, 0., 0., 0.,
-				0., 0.05, 0., 0.,
-				0., 0., 0.05, 0.,
+			scale << 0.08, 0., 0., 0.,
+				0., 0.08, 0., 0.,
+				0., 0., 0.08, 0.,
 				0., 0., 0., 1.;
 			Matrix4f translate;
 			translate << 1., 0., 0., 0.,
@@ -215,6 +217,207 @@ public:
 
             shark->setMove(); //mark shark as an object to rotate
             shark->setStep(0.015); //change angular velocity of object
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+        }
+        for (int i = 0; i < 5; i++) { //fish school 1
+            float angle = DegreesToRadians(i*(360/24));
+            {
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/fish.obj");
+
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << 0., 0., 1., 0., //90 degrees y-axis
+				0., 1., 0., 0.,
+				-1., 0., 0., 0.,
+				0., 0., 0., 1.;
+            Matrix4f rotate2; //rotate after placing
+            rotate2 << cos(angle), -sin(angle), 0., 0., 
+					sin(angle), cos(angle), 0., 0.,
+					0., 0., 1., 0.,
+					0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << 0.1, 0., 0., 0.,
+				0., 0.1, 0., 0.,
+				0., 0., 0.1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., 4.,
+				0., 1., 0., -5.,
+				0., 0., 1., -5.,
+				0., 0., 0., 1.;
+			Matrix4f t = rotate2*translate*scale*rotate;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(60);
+
+            shark->setMove(); 
+            shark->setStep(0.007); 
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+            }
+        }
+        for (int i = 0; i < 5; i++) { //fish school 2
+            float angle = DegreesToRadians(i*(360/20));
+            {
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/fish.obj");
+
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << 0., 0., 1., 0., //90 degrees y-axis
+				0., 1., 0., 0.,
+				-1., 0., 0., 0.,
+				0., 0., 0., 1.;
+            Matrix4f rotate2; //rotate after placing
+            rotate2 << cos(angle), -sin(angle), 0., 0., 
+					sin(angle), cos(angle), 0., 0.,
+					0., 0., 1., 0.,
+					0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << 0.1, 0., 0., 0.,
+				0., 0.1, 0., 0.,
+				0., 0., 0.1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., 4.,
+				0., 1., 0., -5.,
+				0., 0., 1., -10.,
+				0., 0., 0., 1.;
+			Matrix4f t = rotate2*translate*scale*rotate;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(60);
+
+            shark->setMove(); 
+            shark->setStep(0.007); 
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+            }
+        }
+        { //sea turtle
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/seaturtle.obj");
+
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << -1, 0., 0., 0.,
+				0., 1., 0., 0.,
+				-0., 0., -1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << 0.05, 0., 0., 0.,
+				0., 0.05, 0., 0.,
+				0., 0., 0.05, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., 0.,
+				0., 1., 0., -15.,
+				0., 0., 1., -80.,
+				0., 0., 0., 1.;
+			Matrix4f t = translate*scale;//*rotate;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(128);
+
+            shark->setMove(); //mark shark as an object to rotate
+            shark->setStep(0.01); //change angular velocity of object
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+        }
+        { //sea turtle 2
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/seaturtle.obj");
+
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << -1, 0., 0., 0.,
+				0., 1., 0., 0.,
+				-0., 0., -1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << 0.05, 0., 0., 0.,
+				0., 0.05, 0., 0.,
+				0., 0., 0.05, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., -5.,
+				0., 1., 0., -20.,
+				0., 0., 1., -80.,
+				0., 0., 0., 1.;
+			Matrix4f t = translate*scale;//*rotate;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(128);
+
+            shark->setMove(); //mark shark as an object to rotate
+            shark->setStep(0.01); //change angular velocity of object
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+        }
+        { //squid
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/squid.obj");
+
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << -1, 0., 0., 0.,
+				0., 1., 0., 0.,
+				-0., 0., -1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << 0.05, 0., 0., 0.,
+				0., 0.05, 0., 0.,
+				0., 0., 0.05, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., 15.,
+				0., 1., 0., 0.,
+				0., 0., 1., -40.,
+				0., 0., 0., 1.;
+			Matrix4f t = translate*scale*rotate;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(128);
+
+            shark->setMove(); //mark shark as an object to rotate
+            shark->setStep(0.012); //change angular velocity of object
             //// bind texture to object
             shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
 

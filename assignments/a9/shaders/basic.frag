@@ -9,7 +9,13 @@ layout(std140) uniform camera
     mat4 ortho;			/*camera's ortho projection matrix*/
     vec4 position;		/*camera's position in world space*/
 };
-
+struct Light 
+{
+    vec3 position;          /* light position */
+    vec3 Ia;                /* ambient intensity */
+    vec3 Id;                /* diffuse intensity */
+    vec3 Is;                /* specular intensity */     
+};
 /* set light ubo. do not modify.*/
 struct light
 {
@@ -52,6 +58,21 @@ vec3 shading_texture_with_phong(light li, vec3 e, vec3 p, vec3 s, vec3 n)
 {
     return vec3(0.0);
 }
+vec4 sophiaphong(Light li, vec3 e, vec3 p, vec3 s, vec3 n, vec3 texcolor){
+    vec3 v = e - p;
+    v = normalize(v);
+    vec3 r = reflect((p-li.position), n);
+    r = normalize(r);
+    vec3 Ls = ks*li.Is*pow(max(0,dot(v, r)), shininess);
+    vec3 llambert = li.Ia*ka * texcolor;
+    vec3 l = li.position-p;
+    l = normalize(l);
+    vec3 other = kd*li.Id*max(0, dot(l, n)) * texcolor;
+    llambert += other;
+    llambert += Ls;
+    vec4 ans = vec4(llambert, 1.0f);
+    return ans;
+}
 
 vec3 read_normal_texture()
 {
@@ -62,6 +83,14 @@ vec3 read_normal_texture()
 
 void main()
 {
+    const Light light1 = Light(/*position*/ vec3(0, 0, -100), 
+                                /*Ia*/ vec3(0.1, 0.1, 0.1), 
+                                /*Id*/ vec3(1.0, 1.0, 1.0), 
+                                /*Is*/ vec3(0.9, 0.9, 0.9));
+    const Light light2 = Light(/*position*/ vec3(0, 0, 0), 
+                                /*Ia*/ vec3(0.5, 0.5, 0.5), 
+                                /*Id*/ vec3(1.0, 1.0, 1.0), 
+                                /*Is*/ vec3(0.0, 0.0, 0.0));
     vec3 e = position.xyz;              //// eye position
     vec3 p = vtx_position;              //// surface position
     vec3 N = normalize(vtx_normal);     //// normal vector
@@ -71,4 +100,6 @@ void main()
     vec3 texture_color = texture(tex_color, vtx_uv).rgb;
 
     frag_color = vec4(texture_color.rgb, 1.0);
+    frag_color = sophiaphong(light1, e, p, light1.position, N, texture_color);
+    frag_color += sophiaphong(light2, e, p, light2.position, N, texture_color);
 }
