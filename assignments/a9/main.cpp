@@ -114,7 +114,7 @@ public:
         
         //// Background Option (3): Sky box
         //// Here we provide a default implementation of a sky box; customize it for your own sky box
-        /*
+        
         {
             // from https://www.humus.name/index.php?page=Textures
             const std::vector<std::string> cubemap_files{
@@ -131,7 +131,7 @@ public:
             skybox->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("skybox"));
             skybox->Initialize();
         }
-        */
+        
 
         //// Background Option (4): Sky sphere
         //// Here we provide a default implementation of a textured sphere; customize it for your own sky sphere
@@ -425,6 +425,27 @@ public:
             //// bind shader to object
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
         }
+
+        //// KAYLA ADDED THIS HERE - transparent sphere
+        {
+            //// create object by reading an obj mesh
+            auto sphere3 = Add_Obj_Mesh_Object("obj/sphere.obj");
+
+            //// set object's transform
+            Matrix4f t;
+            t << 1, 0, 0, 0,
+                0, 1, 0, -0.5,
+                0, 0, 1, 1,
+                0, 0, 0, 1;
+            sphere3->Set_Model_Matrix(t);
+
+            //// bind shader to object
+            OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/watercolor.png", "water_color"); //converts the transparent png
+            sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+
+            sphere3->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("water_color")); // adding it to the sphere's texture
+        }
+
         //// Here we show an example of adding a mesh with noise-terrain (A6)
         /*{
             //// create object by reading an obj mesh

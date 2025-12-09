@@ -1,0 +1,10 @@
+^C:\USERS\KAYLA\CS3451FINALPROJECT\ASSIGNMENTS\A9\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/assignments/a9/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
