@@ -57,6 +57,7 @@ public:
         OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/terrain.vert", "shaders/terrain.frag", "terrain");
         OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/skybox.vert", "shaders/skybox.frag", "skybox");
         OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/worley.vert", "shaders/worley.frag", "worley");
+        OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/basic.vert", "shaders/ray_tracing.frag", "rt");
 
         //// Load all the textures you need for the scene
         //// In the function call of Add_Shader_From_File(), we specify two names:
@@ -161,32 +162,6 @@ public:
             sphere->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("worley"));
         }
 
-        //// Here we load a bunny object with the basic shader to show how to add an object into the scene
-        /*{
-            //// create object by reading an obj mesh
-            auto bunny = Add_Obj_Mesh_Object("obj/bunny.obj");
-
-            //// set object's transform
-            Matrix4f t;
-            t << 1, 0, 0, 1.5,
-                0, 1, 0, 0,
-                0, 0, 1, 0,
-                0, 0, 0, 1;
-            bunny->Set_Model_Matrix(t);
-
-            //// set object's material
-            bunny->Set_Ka(Vector3f(0.1, 0.1, 0.1));
-            bunny->Set_Kd(Vector3f(0.7, 0.7, 0.7));
-            bunny->Set_Ks(Vector3f(2, 2, 2));
-            bunny->Set_Shininess(128);
-
-            //// bind texture to object
-            bunny->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bunny_color"));
-            bunny->Add_Texture("tex_normal", OpenGLTextureLibrary::Get_Texture("bunny_normal"));
-
-            //// bind shader to object
-            bunny->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
-        }*/
         {
             //// create object by reading an obj mesh
             auto shark = Add_Obj_Mesh_Object("obj/shark.obj");
@@ -332,7 +307,7 @@ public:
 			Matrix4f translate;
 			translate << 1., 0., 0., 0.,
 				0., 1., 0., -15.,
-				0., 0., 1., -80.,
+				0., 0., 1., 0,
 				0., 0., 0., 1.;
 			Matrix4f t = translate*scale;//*rotate;
             shark->Set_Model_Matrix(t);
@@ -430,20 +405,22 @@ public:
         {
             //// create object by reading an obj mesh
             auto sphere3 = Add_Obj_Mesh_Object("obj/sphere.obj");
+            float s = 10;
 
             //// set object's transform
             Matrix4f t;
-            t << 1, 0, 0, 0,
-                0, 1, 0, -0.5,
-                0, 0, 1, 1,
+            t << s, 0, 0, 0,
+                0, s, 0, -0.5,
+                0, 0, s, 1,
                 0, 0, 0, 1;
             sphere3->Set_Model_Matrix(t);
 
             //// bind shader to object
-            OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/watercolor.png", "water_color"); //converts the transparent png
-            sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+            // OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/watercolor.png", "water_color"); //converts the transparent png
+            sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("environment"));
+            //sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
 
-            sphere3->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("water_color")); // adding it to the sphere's texture
+            //sphere3->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("water_color")); // adding it to the sphere's texture
         }
 
         //// Here we show an example of adding a mesh with noise-terrain (A6)
@@ -498,47 +475,6 @@ public:
             //// bind shader to object
             sqad->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend"));
         }*/
-
-        //// Here we show an example of adding a billboard particle with a star shape using alpha blending
-        //// The billboard is rendered with its texture and is always facing the camera.
-        //// This example will be useful if you plan to implement a CPU-based particle system.
-        /*{
-            //// create object by reading an obj mesh
-            auto sqad = Add_Obj_Mesh_Object("obj/sqad.obj");
-
-            //// set object's transform
-            Matrix4f t;
-            t << 1, 0, 0, 0,
-                 0, 1, 0, 0,
-                 0, 0, 1, 2.5,
-                 0, 0, 0, 1;
-            sqad->Set_Model_Matrix(t);
-
-            //// bind texture to object
-            sqad->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("star_color"));
-
-            //// bind shader to object
-            sqad->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("billboard"));
-        }*/
-
-        //// Here we show an example of shading (ray-tracing) a sphere with environment mapping
-        /*
-        {
-            //// create object by reading an obj mesh
-            auto sphere2 = Add_Obj_Mesh_Object("obj/sphere.obj");
-
-            //// set object's transform
-            Matrix4f t;
-            t << .6, 0, 0, 0,
-                0, .6, 0, -.5,
-                0, 0, .6, 1,
-                0, 0, 0, 1;
-            sphere2->Set_Model_Matrix(t);
-
-            //// bind shader to object
-            sphere2->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("environment")); // bind shader to object
-        }
-        */
 
         //// Here we create a mesh object with two triangle specified using a vertex array and a triangle array.
         //// This is an example showing how to create a mesh object without reading an .obj file. 
