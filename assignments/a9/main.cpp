@@ -448,7 +448,29 @@ public:
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
         }
         
+        //// Here we show an example of adding a mesh with noise-terrain (A6)
+        {
+            //// create object by reading an obj mesh
+            auto terrain = Add_Obj_Mesh_Object("obj/plane.obj");
 
+            //// set object's transform
+            Matrix4f t;
+            float s = 7.25;
+            t << s, 0, 0, -s * 2.5,
+                 0, s, 0, -s * 2.5,
+                 0, 0, s, -s * 2,
+                 0, 0, 0, 1,
+            terrain->Set_Model_Matrix(t);
+
+            //// set object's material
+            terrain->Set_Ka(Vector3f(0.1f, 0.1f, 0.1f));
+            terrain->Set_Kd(Vector3f(0.7f, 0.7f, 0.7f));
+            terrain->Set_Ks(Vector3f(1, 1, 1));
+            terrain->Set_Shininess(128.f);
+
+            //// bind shader to object (we do not bind texture for this object because we create noise for texture)
+            terrain->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("terrain"));
+        }
         //// KAYLA ADDED THIS HERE - 'transparent' sphere for water (edited the env.frag for transparent effect)
         {
             //// create object by reading an obj mesh
