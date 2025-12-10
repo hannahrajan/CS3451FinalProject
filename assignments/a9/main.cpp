@@ -57,7 +57,7 @@ public:
         OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/terrain.vert", "shaders/terrain.frag", "terrain");
         OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/skybox.vert", "shaders/skybox.frag", "skybox");
         OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/worley.vert", "shaders/worley.frag", "worley");
-        OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/basic.vert", "shaders/ray_tracing.frag", "rt");
+        //OpenGLShaderLibrary::Instance()->Add_Shader_From_File("shaders/basic.vert", "shaders/ray_tracing.frag", "rt");
 
         //// Load all the textures you need for the scene
         //// In the function call of Add_Shader_From_File(), we specify two names:
@@ -134,34 +134,6 @@ public:
             skybox->Initialize();
         }
         
-
-        //// Background Option (4): Sky sphere
-        //// Here we provide a default implementation of a textured sphere; customize it for your own sky sphere
-        {
-            //// create object by reading an obj mesh
-            auto sphere = Add_Obj_Mesh_Object("obj/sphere.obj");
-
-            //// set object's transform
-            Matrix4f t;
-            t << 1, 0, 0, -1.5,
-                0, 1, 0, -1,
-                0, 0, 1, 0.5,
-                0, 0, 0, 1;
-            sphere->Set_Model_Matrix(t);
-
-            //// set object's material
-            sphere->Set_Ka(Vector3f(0.1, 0.1, 0.1));
-            sphere->Set_Kd(Vector3f(0.7, 0.7, 0.7));
-            sphere->Set_Ks(Vector3f(2, 2, 2));
-            sphere->Set_Shininess(128);
-
-            //// bind texture to object
-            sphere->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("sphere_color"));
-            //sphere->Add_Texture("tex_normal", OpenGLTextureLibrary::Get_Texture("sphere_normal"));
-
-            //// bind shader to object
-            sphere->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("worley"));
-        }
 
         { //shark
             //// create object by reading an obj mesh
@@ -490,9 +462,11 @@ public:
                 0, 0, s, 1,
                 0, 0, 0, 1;
             sphere3->Set_Model_Matrix(t);
-
+            
+            sphere3->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("sphere_color"));
             //// bind shader to object
-            sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("environment"));
+            //sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("environment"));
+            sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("worley"));
         }
 
         // alpha blending to add clear jellyfish
