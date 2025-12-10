@@ -168,8 +168,9 @@ public:
             //// bind shader to object
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
         }
-        for (int i = 0; i < 5; i++) { //fish school 1
+        for (int i = 0; i < 15; i++) { //fish school 1
             float angle = DegreesToRadians(i*(360/24));
+            float rotateby = DegreesToRadians(315);
             float s = 0.08;
             {
             //// create object by reading an obj mesh
@@ -177,9 +178,14 @@ public:
 
             //// set object's transform
             Matrix4f rotate;
-			rotate << 1., 0., 0., 0., //90 degrees z-axis
+			rotate << 1., 0., 0., 0.,
 				0., 0., -1., 0.,
 				0., 1., 0., 0.,
+				0., 0., 0., 1.;
+            Matrix4f rotate3;
+			rotate3 << cos(rotateby), 0., sin(rotateby), 0.,
+				0., 1., 0., 0.,
+                -sin(rotateby), 0., cos(rotateby), 0.,
 				0., 0., 0., 1.;
             Matrix4f rotate2; //rotate after placing
             rotate2 << cos(angle), -sin(angle), 0., 0., 
@@ -196,7 +202,7 @@ public:
 				0., 1., 0., -5.,
 				0., 0., 1., -5.,
 				0., 0., 0., 1.;
-			Matrix4f t = rotate2*translate*scale*rotate;
+			Matrix4f t = rotate2*translate*scale*rotate*rotate3;
             shark->Set_Model_Matrix(t);
 
             //// set object's material
@@ -215,16 +221,22 @@ public:
             }
         }
         for (int i = 0; i < 5; i++) { //fish school 2
-            float angle = DegreesToRadians(i*(360/20));
+            float angle = DegreesToRadians(i*(360/15));
+            float rotateby = DegreesToRadians(315);
             {
             //// create object by reading an obj mesh
             auto shark = Add_Obj_Mesh_Object("obj/fish.obj");
 
             //// set object's transform
             Matrix4f rotate;
-			rotate << 1., 0., 0., 0., //90 degrees z-axis
+			rotate << 1., 0., 0., 0., //90 degrees x-axis
 				0., 0., -1., 0.,
 				0., 1., 0., 0.,
+				0., 0., 0., 1.;
+            Matrix4f rotate3;
+			rotate3 << cos(rotateby), 0., sin(rotateby), 0.,
+				0., 1., 0., 0.,
+                -sin(rotateby), 0., cos(rotateby), 0.,
 				0., 0., 0., 1.;
             Matrix4f rotate2; //rotate after placing
             rotate2 << cos(angle), -sin(angle), 0., 0., 
@@ -232,16 +244,16 @@ public:
 					0., 0., 1., 0.,
 					0., 0., 0., 1.;
 			Matrix4f scale;
-			scale << 0.1, 0., 0., 0.,
-				0., 0.1, 0., 0.,
-				0., 0., 0.1, 0.,
+			scale << 0.2, 0., 0., 0.,
+				0., 0.2, 0., 0.,
+				0., 0., 0.2, 0.,
 				0., 0., 0., 1.;
 			Matrix4f translate;
 			translate << 1., 0., 0., 4.,
 				0., 1., 0., -5.,
 				0., 0., 1., -10.,
 				0., 0., 0., 1.;
-			Matrix4f t = rotate2*translate*scale*rotate;
+			Matrix4f t = rotate2*translate*scale*rotate*rotate3;
             shark->Set_Model_Matrix(t);
 
             //// set object's material
@@ -257,6 +269,119 @@ public:
 
             //// bind shader to object
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+            }
+        }
+        for (int i = 0; i < 7; i++) { //fish school 3
+            float angle = DegreesToRadians(i*(360/20));
+            float rotateby = DegreesToRadians(225);
+            {
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/fish.obj");
+
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << 1., 0., 0., 0., //90 degrees x-axis
+				0., 0., -1., 0.,
+				0., 1., 0., 0.,
+				0., 0., 0., 1.;
+            Matrix4f rotate3;
+			rotate3 << cos(rotateby), 0., sin(rotateby), 0.,
+				0., 1., 0., 0.,
+                -sin(rotateby), 0., cos(rotateby), 0.,
+				0., 0., 0., 1.;
+            Matrix4f rotate2; //rotate after placing
+            rotate2 << cos(angle), -sin(angle), 0., 0., 
+					sin(angle), cos(angle), 0., 0.,
+					0., 0., 1., 0.,
+					0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << 0.1, 0., 0., 0.,
+				0., 0.1, 0., 0.,
+				0., 0., 0.1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., 4.,
+				0., 1., 0., 5.,
+				0., 0., 1., 0.,
+				0., 0., 0., 1.;
+			Matrix4f t = rotate2*translate*scale*rotate*rotate3;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.1, 0.67, 0.5));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(60);
+
+            shark->setMove(); 
+            shark->setStep(0.009); 
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+            }
+        }
+        ////many many lines of fish
+        for (int j = 5; j < 25; j++) {
+            for (int i = 0; i < 5; i++) { //fish school 2
+                float angle = DegreesToRadians(i*(360/(j)));
+                int temp = 315;
+                if (j%2==0){
+                    temp -= 180;
+                }
+                float rotateby = DegreesToRadians(temp+j);
+                {
+                //// create object by reading an obj mesh
+                auto shark = Add_Obj_Mesh_Object("obj/fish.obj");
+
+                //// set object's transform
+                Matrix4f rotate;
+                rotate << 1., 0., 0., 0., //90 degrees x-axis
+                    0., 0., -1., 0.,
+                    0., 1., 0., 0.,
+                    0., 0., 0., 1.;
+                Matrix4f rotate3;
+                rotate3 << cos(rotateby), 0., sin(rotateby), 0.,
+                    0., 1., 0., 0.,
+                    -sin(rotateby), 0., cos(rotateby), 0.,
+                    0., 0., 0., 1.;
+                Matrix4f rotate2; //rotate after placing
+                rotate2 << cos(angle), -sin(angle), 0., 0., 
+                        sin(angle), cos(angle), 0., 0.,
+                        0., 0., 1., 0.,
+                        0., 0., 0., 1.;
+                Matrix4f scale;
+                scale << 0.2, 0., 0., 0.,
+                    0., 0.2, 0., 0.,
+                    0., 0., 0.2, 0.,
+                    0., 0., 0., 1.;
+                Matrix4f translate;
+                translate << 1., 0., 0., j*0.7,
+                    0., 1., 0., 0.7*j,
+                    0., 0., 1., j*0.5,
+                    0., 0., 0., 1.;
+                Matrix4f t = rotate2*translate*scale*rotate*rotate3;
+                shark->Set_Model_Matrix(t);
+
+                //// set object's material
+                shark->Set_Ka(Vector3f(0.1, 0.67, 0.5));
+                shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+                shark->Set_Ks(Vector3f(2, 2, 2));
+                shark->Set_Shininess(60);
+
+                shark->setMove(); 
+                if (j % 2 == 0) {
+                    shark->setStep(0.0001 * j + 0.005);
+                }else{
+                    shark->setStep(-0.0001 * j - 0.005);
+                }
+                //// bind texture to object
+                shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+                //// bind shader to object
+                shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+                }
             }
         }
         { //sea turtle
@@ -448,7 +573,7 @@ public:
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
         }
         
-        //// Here we show an example of adding a mesh with noise-terrain (A6)
+        /*//// Here we show an example of adding a mesh with noise-terrain (A6)
         {
             //// create object by reading an obj mesh
             auto terrain = Add_Obj_Mesh_Object("obj/plane.obj");
@@ -470,7 +595,7 @@ public:
 
             //// bind shader to object (we do not bind texture for this object because we create noise for texture)
             terrain->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("terrain"));
-        }
+        }*/
         //// KAYLA ADDED THIS HERE - 'transparent' sphere for water (edited the env.frag for transparent effect)
         {
             //// create object by reading an obj mesh
