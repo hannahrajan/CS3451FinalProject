@@ -76,6 +76,7 @@ public:
         OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/buzz_color.png", "buzz_color");
         OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/star.png", "star_color");
         OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/bluegray.png", "bluegray");
+        OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/bubble.png", "bubble");
         //// Add all the lights you need for the scene (no more than 4 lights)
         //// The four parameters are position, ambient, diffuse, and specular.
         //// The lights you declared here will be synchronized to all shaders in uniform lights.
@@ -167,11 +168,6 @@ public:
             auto shark = Add_Obj_Mesh_Object("obj/shark.obj");
 
             //// set object's transform
-            Matrix4f rotate;
-			rotate << -1, 0., 0., 0.,
-				0., 1., 0., 0.,
-				-0., 0., -1, 0.,
-				0., 0., 0., 1.;
 			Matrix4f scale;
 			scale << 0.08, 0., 0., 0.,
 				0., 0.08, 0., 0.,
@@ -180,9 +176,9 @@ public:
 			Matrix4f translate;
 			translate << 1., 0., 0., 0.,
 				0., 1., 0., -15.,
-				0., 0., 1., -80.,
+				0., 0., 1., -10.,
 				0., 0., 0., 1.;
-			Matrix4f t = translate*scale*rotate;
+			Matrix4f t = translate*scale;
             shark->Set_Model_Matrix(t);
 
             //// set object's material
@@ -192,7 +188,7 @@ public:
             shark->Set_Shininess(128);
 
             shark->setMove(); //mark shark as an object to rotate
-            shark->setStep(0.015); //change angular velocity of object
+            shark->setStep(-0.015); //change angular velocity of object
             //// bind texture to object
             shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
 
@@ -344,7 +340,7 @@ public:
 			Matrix4f translate;
 			translate << 1., 0., 0., -5.,
 				0., 1., 0., -20.,
-				0., 0., 1., -80.,
+				0., 0., 1., -5.,
 				0., 0., 0., 1.;
 			Matrix4f t = translate*scale;//*rotate;
             shark->Set_Model_Matrix(t);
@@ -366,6 +362,7 @@ public:
         { //squid
             //// create object by reading an obj mesh
             auto shark = Add_Obj_Mesh_Object("obj/squid.obj");
+            float s = 0.15;
 
             //// set object's transform
             Matrix4f rotate;
@@ -374,14 +371,14 @@ public:
 				-0., 0., -1, 0.,
 				0., 0., 0., 1.;
 			Matrix4f scale;
-			scale << 0.05, 0., 0., 0.,
-				0., 0.05, 0., 0.,
-				0., 0., 0.05, 0.,
+			scale << s, 0., 0., 0.,
+				0., s, 0., 0.,
+				0., 0., s, 0.,
 				0., 0., 0., 1.;
 			Matrix4f translate;
-			translate << 1., 0., 0., 15.,
+			translate << 1., 0., 0., 10.,
 				0., 1., 0., 0.,
-				0., 0., 1., -40.,
+				0., 0., 1., 15.,
 				0., 0., 0., 1.;
 			Matrix4f t = translate*scale*rotate;
             shark->Set_Model_Matrix(t);
@@ -401,11 +398,11 @@ public:
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
         }
 
-        //// KAYLA ADDED THIS HERE - transparent sphere
+        //// KAYLA ADDED THIS HERE - transparent sphere for water (edited the env.frag for transparent effect)
         {
             //// create object by reading an obj mesh
             auto sphere3 = Add_Obj_Mesh_Object("obj/sphere.obj");
-            float s = 10;
+            float s = 30;
 
             //// set object's transform
             Matrix4f t;
