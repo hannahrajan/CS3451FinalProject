@@ -75,8 +75,8 @@ float noiseOctave(vec2 v, int num)
 
 float height(vec2 v){
     float h = 0;
-	h = 0.75 * noiseOctave(v, 10);
-	if(h<0) h *= .5;
+	h = 0.3 * noiseOctave(v, 10);
+	if(h<0) h = 0;
 	return h * 2.;
 }
 
@@ -114,17 +114,52 @@ vec3 shading_terrain(vec3 pos) {
 
     n = normalize((model * vec4(n, 0)).xyz);
     p = (model * vec4(p, 1)).xyz;
-
+	
     vec3 color = shading_phong(lt[0], e, p, s, n).xyz;
-
+	
 	float h = pos.z + .8;
 	h = clamp(h, 0.0, 1.0);
-	vec3 emissiveColor = mix(vec3(.4,.6,.2), vec3(.4,.3,.2), h);
+	float step_height = 0.1;
 
-	return color * emissiveColor;
+	//// MOUNDS + SEAWEED - random, ~90% mounds 10% seaweed
+	vec3 top_mound_color = vec3(227 / 255.,200 / 255.,125 / 255.);
+	vec3 bottom_mound_color = vec3(232 / 255.,198 / 255.,153 / 255.);
+
+	vec3 top_seaweed_color = vec3(19 / 255.f,189 / 255.f,75 / 255.f);
+	vec3 bottom_seaweed_color = vec3(4 / 255.f,133 / 255.f,47 / 255.f);
+
+	float r = fract(sin(dot(floor(pos.xy),vec2(127.1,311.7))) * 43758.5453123); //new hash - should give even 50/50 split
+
+	float band = floor((pos.z - 0.0001) / step_height); 
+	float local_h = fract((pos.z - 0.0001) / step_height);
+
+	bool even_band = mod(int(band), 2) == 0;
+
+	vec3 colorA = vec3(0.0);
+	vec3 colorB = vec3(0.0);
+
+	if (r < 0.9){
+		colorA = even_band ? top_mound_color : bottom_mound_color;
+		colorB = even_band ? bottom_mound_color : top_mound_color;
+	} else {
+		colorA = even_band ? top_seaweed_color : bottom_seaweed_color;
+		colorB = even_band ? bottom_seaweed_color : top_seaweed_color;
+	}
+
+	vec3 emissive_color = mix(colorA, colorB, smoothstep(0.0, 1.0, local_h));
+
+	return color * emissive_color;
 }
 
 void main()
 {
-    frag_color = vec4(shading_terrain(vtx_pos), 1.0);
+	float radius = 2.5;
+    vec2 center = vec2(2.5);
+    float dist = length(vtx_pos.xy - center);
+    
+    // Create circular mask with 1.0 inside, 0.0 outside
+    float circle_mask = step(dist, radius);
+	//frag_color = vec4(shading_terrain(vtx_pos), 1.0);
+    frag_color = mix(vec4(0.0, 0.0, 0.0, 0.0), vec4(shading_terrain(vtx_pos), 1.0), circle_mask);
+    
 }

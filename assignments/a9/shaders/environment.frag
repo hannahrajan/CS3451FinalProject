@@ -48,5 +48,5 @@ void main()
     vec3 I = normalize(position.xyz - vtx_position);
     vec3 R = reflect(I, normalize(vtx_normal));
     vec3 color = texture(skybox, vec3(R.x, -R.y, -R.z)).rgb;
-    frag_color = vec4(color, 1.0);
+    frag_color = vec4(color, 0.5);
 }

@@ -31,54 +31,55 @@ layout(std140) uniform lights
 uniform float iTime;
 uniform mat4 model;		/*model matrix*/
 
-in vec3 vtx_pos;
-in vec3 vtx_normal;
+in vec3 vtx_normal; // vtx normal in world space
+in vec3 vtx_position; // vtx position in world space
+in vec3 vtx_model_position; // vtx position in model space
+in vec4 vtx_color;
 in vec2 vtx_uv;
+in vec3 vtx_tangent;
 
 out vec4 frag_color;
-
 
 uniform vec3 ka;            /* object material ambient */
 uniform vec3 kd;            /* object material diffuse */
 uniform vec3 ks;            /* object material specular */
 uniform float shininess;    /* object material shininess */
 
-uniform sampler2D tex_color; 
+uniform sampler2D texture_color; 
+uniform samplerCube skybox;
 
-vec3 hash3(vec3 p) {
+vec2 hash2(vec2 p) {
     return mod((34.0 * p + 1.0) * p, 289.0) / 289.0;
 }
 
-float worley_noise_3d(vec3 p)
+float worley_noise_2d(vec2 p)
 {
-    vec3 i = floor(p);
-    vec3 f = fract(p);
+    vec2 i = floor(p);
+    vec2 f = fract(p);
     
     float noise = 1.0;
     
     for (int x = -1; x <= 1; x++) {
         for (int y = -1; y <= 1; y++) {
-            for (int z = -1; z <= 1; z++) {
-                vec3 neighbor = vec3(float(x), float(y), float(z));
-                vec3 feature = hash3(i + neighbor);
-                feature = 0.5 + 0.5 * sin(iTime + 6.2831 * feature);
-                float dist = length(neighbor + feature - f);
-                noise = min(noise, dist);
-            }
+            vec2 neighbor = vec2(float(x), float(y));
+			vec2 feature = hash2(i + neighbor);
+			feature = 0.5 + 0.25 * sin(iTime + 6.2831 * feature);
+			float dist = length(neighbor + feature - f);
+			noise = min(noise, dist);
         }
     }
     
     return noise;
 }
 
-float noiseOctave_3d(vec3 v, int num)
+float noiseOctave_2d(vec2 v, int num)
 {
     float sum = 0;
     float amplitude = 1.0;
     float frequency = 1.0;
     
     for(int i = 0; i < num; i++) {
-        sum += amplitude * worley_noise_3d(frequency * v);
+        sum += amplitude * worley_noise_2d(frequency * v);
         amplitude *= 0.5;
         frequency *= 2.0;
     }
@@ -92,7 +93,7 @@ vec4 shading_texture_with_phong(light li, vec3 e, vec3 p, vec3 s, vec3 n, vec2 u
     vec3 l = normalize(s - p);
     vec3 r = normalize(reflect(-l, n));
 
-    vec3 tex_color = texture(tex_color, uv).rgb;
+    vec3 tex_color = texture(texture_color, uv).rgb;
     
     vec3 ambColor = ka * li.amb.rgb * tex_color;
     vec3 difColor = tex_color * li.dif.rgb * max(0., dot(n, l));
@@ -101,17 +102,26 @@ vec4 shading_texture_with_phong(light li, vec3 e, vec3 p, vec3 s, vec3 n, vec2 u
     return vec4(ambColor + difColor + specColor, 1);
 }
 
-vec3 shading_worley_sphere(vec3 world_pos, vec3 normal, vec2 uv)
+vec2 sphericalUV(vec3 pos) {
+    float u = atan(pos.z, pos.x) / (2.0 * 3.14159);
+    float v = asin(pos.y) / 3.14159;
+    return vec2(u, v);
+}
+
+vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 {
+	//3D position -> Spherical coordinates
+	vec2 sphere_uv = sphericalUV(normalize(model_pos));
+
     // Scale the position to control cell size
-    float scale = 5.0;
-    vec3 sample_pos = world_pos * scale;
+    float scale = 10.0;
+    vec2 sample_pos = sphere_uv * scale;
     
     // Get 3D Worley noise
-    float noise = noiseOctave_3d(sample_pos, 1);
+    float noise = noiseOctave_2d(sample_pos, 1);
     
     // Make cells more distinct
-    noise = smoothstep(0.2, 0.8, noise);
+    noise = smoothstep(0.4, 0.6, noise);
 
 	vec3 n = normal;
 	vec3 e = position.xyz;
@@ -124,7 +134,25 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 normal, vec2 uv)
 
 }
 
+
+vec3 shading_worley_with_reflection(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
+{
+    // Get Worley Noise
+	vec3 worley_color = shading_worley_sphere(world_pos, model_pos, normal, uv);	
+    
+    // Skybox reflection!
+    vec3 I = normalize(position.xyz - world_pos);
+    vec3 R = reflect(I, normal);
+    vec3 reflection = texture(skybox, vec3(R.x, -R.y, -R.z)).rgb;
+    
+    // Worley + reflection!
+    float reflection_strength = 0.8; 
+    vec3 final_color = mix(worley_color, reflection, reflection_strength);
+    
+    return final_color;
+}
+
 void main()
 {
-    frag_color = vec4(shading_worley_sphere(vtx_pos, normalize(vtx_normal), vtx_uv), 1.0);
+    frag_color = vec4(shading_worley_with_reflection(vtx_position, vtx_model_position, normalize(vtx_normal), vtx_uv), 0.5);
 }
