@@ -163,15 +163,16 @@ public:
             sphere->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("worley"));
         }
 
-        {
+        { //shark
             //// create object by reading an obj mesh
             auto shark = Add_Obj_Mesh_Object("obj/shark.obj");
+            float s = 0.1;
 
             //// set object's transform
 			Matrix4f scale;
-			scale << 0.08, 0., 0., 0.,
-				0., 0.08, 0., 0.,
-				0., 0., 0.08, 0.,
+			scale << s, 0., 0., 0.,
+				0., s, 0., 0.,
+				0., 0., s, 0.,
 				0., 0., 0., 1.;
 			Matrix4f translate;
 			translate << 1., 0., 0., 0.,
@@ -197,15 +198,16 @@ public:
         }
         for (int i = 0; i < 5; i++) { //fish school 1
             float angle = DegreesToRadians(i*(360/24));
+            float s = 0.08;
             {
             //// create object by reading an obj mesh
             auto shark = Add_Obj_Mesh_Object("obj/fish.obj");
 
             //// set object's transform
             Matrix4f rotate;
-			rotate << 0., 0., 1., 0., //90 degrees y-axis
+			rotate << 1., 0., 0., 0., //90 degrees z-axis
+				0., 0., -1., 0.,
 				0., 1., 0., 0.,
-				-1., 0., 0., 0.,
 				0., 0., 0., 1.;
             Matrix4f rotate2; //rotate after placing
             rotate2 << cos(angle), -sin(angle), 0., 0., 
@@ -213,9 +215,9 @@ public:
 					0., 0., 1., 0.,
 					0., 0., 0., 1.;
 			Matrix4f scale;
-			scale << 0.1, 0., 0., 0.,
-				0., 0.1, 0., 0.,
-				0., 0., 0.1, 0.,
+			scale << s, 0., 0., 0.,
+				0., s, 0., 0.,
+				0., 0., s, 0.,
 				0., 0., 0., 1.;
 			Matrix4f translate;
 			translate << 1., 0., 0., 4.,
@@ -226,13 +228,13 @@ public:
             shark->Set_Model_Matrix(t);
 
             //// set object's material
-            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Ka(Vector3f(0.95, 0.7, 0.1));
             shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
             shark->Set_Ks(Vector3f(2, 2, 2));
             shark->Set_Shininess(60);
 
             shark->setMove(); 
-            shark->setStep(0.007); 
+            shark->setStep(-0.007); 
             //// bind texture to object
             shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
 
@@ -248,9 +250,9 @@ public:
 
             //// set object's transform
             Matrix4f rotate;
-			rotate << 0., 0., 1., 0., //90 degrees y-axis
+			rotate << 1., 0., 0., 0., //90 degrees z-axis
+				0., 0., -1., 0.,
 				0., 1., 0., 0.,
-				-1., 0., 0., 0.,
 				0., 0., 0., 1.;
             Matrix4f rotate2; //rotate after placing
             rotate2 << cos(angle), -sin(angle), 0., 0., 
@@ -271,13 +273,13 @@ public:
             shark->Set_Model_Matrix(t);
 
             //// set object's material
-            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Ka(Vector3f(0.1, 0.67, 0.5));
             shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
             shark->Set_Ks(Vector3f(2, 2, 2));
             shark->Set_Shininess(60);
 
             shark->setMove(); 
-            shark->setStep(0.007); 
+            shark->setStep(-0.009); 
             //// bind texture to object
             shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
 
@@ -309,7 +311,7 @@ public:
             shark->Set_Model_Matrix(t);
 
             //// set object's material
-            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Ka(Vector3f(0.1, 0.95, 0.1));
             shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
             shark->Set_Ks(Vector3f(2, 2, 2));
             shark->Set_Shininess(128);
@@ -346,7 +348,7 @@ public:
             shark->Set_Model_Matrix(t);
 
             //// set object's material
-            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Ka(Vector3f(0.1, 0.95, 0.1));
             shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
             shark->Set_Ks(Vector3f(2, 2, 2));
             shark->Set_Shininess(128);
@@ -384,7 +386,7 @@ public:
             shark->Set_Model_Matrix(t);
 
             //// set object's material
-            shark->Set_Ka(Vector3f(0.1, 0.1, 0.1));
+            shark->Set_Ka(Vector3f(0.75, 0.3, 0.3));
             shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
             shark->Set_Ks(Vector3f(2, 2, 2));
             shark->Set_Shininess(128);
@@ -397,8 +399,85 @@ public:
             //// bind shader to object
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
         }
+        { //squid2
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/squid.obj");
+            float s = 0.25;
 
-        //// KAYLA ADDED THIS HERE - transparent sphere for water (edited the env.frag for transparent effect)
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << -1, 0., 0., 0.,
+				0., 1., 0., 0.,
+				-0., 0., -1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << s, 0., 0., 0.,
+				0., s, 0., 0.,
+				0., 0., s, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., 15.,
+				0., 1., 0., 5.,
+				0., 0., 1., 10.,
+				0., 0., 0., 1.;
+			Matrix4f t = translate*scale*rotate;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.75, 0.3, 0.3));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(128);
+
+            shark->setMove(); //mark shark as an object to rotate
+            shark->setStep(0.012); //change angular velocity of object
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+        }
+        { //squid3
+            //// create object by reading an obj mesh
+            auto shark = Add_Obj_Mesh_Object("obj/squid.obj");
+            float s = 0.16;
+
+            //// set object's transform
+            Matrix4f rotate;
+			rotate << -1, 0., 0., 0.,
+				0., 1., 0., 0.,
+				-0., 0., -1, 0.,
+				0., 0., 0., 1.;
+			Matrix4f scale;
+			scale << s, 0., 0., 0.,
+				0., s, 0., 0.,
+				0., 0., s, 0.,
+				0., 0., 0., 1.;
+			Matrix4f translate;
+			translate << 1., 0., 0., 17.,
+				0., 1., 0., 7.,
+				0., 0., 1., 13.,
+				0., 0., 0., 1.;
+			Matrix4f t = translate*scale*rotate;
+            shark->Set_Model_Matrix(t);
+
+            //// set object's material
+            shark->Set_Ka(Vector3f(0.75, 0.3, 0.3));
+            shark->Set_Kd(Vector3f(0.7, 0.7, 0.7));
+            shark->Set_Ks(Vector3f(2, 2, 2));
+            shark->Set_Shininess(128);
+
+            shark->setMove(); //mark shark as an object to rotate
+            shark->setStep(0.012); //change angular velocity of object
+            //// bind texture to object
+            shark->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("bluegray"));
+
+            //// bind shader to object
+            shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
+        }
+        
+
+        //// KAYLA ADDED THIS HERE - 'transparent' sphere for water (edited the env.frag for transparent effect)
         {
             //// create object by reading an obj mesh
             auto sphere3 = Add_Obj_Mesh_Object("obj/sphere.obj");
@@ -418,68 +497,135 @@ public:
 
         // alpha blending to add clear jellyfish
 
-        //jelly 1
         {
-            //// create object by reading an obj mesh
-            auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
+            //jelly 1
+            {
+                //// create object by reading an obj mesh
+                auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
 
-            //// set object's transform
-			Matrix4f rotate;
-            rotate << 1, 0, 0, 0.,
-				    0, 0, -1, 0.,
-				    0., 1, 0, 0.,
-				    0., 0., 0., 1.;
+                //// set object's transform
+                Matrix4f rotate;
+                rotate << 1, 0, 0, 0.,
+                        0, 0, -1, 0.,
+                        0., 1, 0, 0.,
+                        0., 0., 0., 1.;
 
-            Matrix4f scale;
-			scale << 0.08, 0., 0., 0.,
-				0., 0.08, 0., 0.,
-				0., 0., 0.08, 0.,
-				0., 0., 0., 1.;
+                Matrix4f scale;
+                scale << 0.08, 0., 0., 0.,
+                    0., 0.08, 0., 0.,
+                    0., 0., 0.08, 0.,
+                    0., 0., 0., 1.;
 
-			Matrix4f translate;
-			translate << 1., 0., 0., 0.,
-				0., 1., 0., -45.,
-				0., 0., 1., -10.,
-				0., 0., 0., 1.;
-			Matrix4f t = translate*scale*rotate;
-            jellyfish->Set_Model_Matrix(t);            
+                Matrix4f translate;
+                translate << 1., 0., 0., 0.,
+                    0., 1., 0., -45.,
+                    0., 0., 1., -10.,
+                    0., 0., 0., 1.;
+                Matrix4f t = translate*scale*rotate;
+                jellyfish->Set_Model_Matrix(t);            
 
-            //// bind shader to object
-            jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
-            jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
-      
-        }
+                //// bind shader to object
+                jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
+                jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+        
+            }
 
-        //jelly 2
-        {
-            //// create object by reading an obj mesh
-            auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
+            //jelly 2
+            {
+                //// create object by reading an obj mesh
+                auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
 
-            //// set object's transform
-			Matrix4f rotate;
-            rotate << 1, 0, 0, 0.,
-				    0, 0, -1, 0.,
-				    0., 1, 0, 0.,
-				    0., 0., 0., 1.;
+                //// set object's transform
+                Matrix4f rotate;
+                rotate << 1, 0, 0, 0.,
+                        0, 0, -1, 0.,
+                        0., 1, 0, 0.,
+                        0., 0., 0., 1.;
 
-            Matrix4f scale;
-			scale << 0.04, 0., 0., 0.,
-				0., 0.04, 0., 0.,
-				0., 0., 0.04, 0.,
-				0., 0., 0., 1.;
+                Matrix4f scale;
+                scale << 0.04, 0., 0., 0.,
+                    0., 0.04, 0., 0.,
+                    0., 0., 0.04, 0.,
+                    0., 0., 0., 1.;
 
-			Matrix4f translate;
-			translate << 1., 0., 0., 5,
-				0., 1., 0., -35.,
-				0., 0., 1., -20.,
-				0., 0., 0., 1.;
-			Matrix4f t = translate*scale*rotate;
-            jellyfish->Set_Model_Matrix(t);            
+                Matrix4f translate;
+                translate << 1., 0., 0., 5,
+                    0., 1., 0., -35.,
+                    0., 0., 1., -20.,
+                    0., 0., 0., 1.;
+                Matrix4f t = translate*scale*rotate;
+                jellyfish->Set_Model_Matrix(t);            
 
-            //// bind shader to object
-            jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
-            jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
-      
+                //// bind shader to object
+                jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
+                jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+        
+            }
+
+            //jelly 3
+            {
+                //// create object by reading an obj mesh
+                auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
+
+                //// set object's transform
+                Matrix4f rotate;
+                rotate << 1, 0, 0, 0.,
+                        0, 0, -1, 0.,
+                        0., 1, 0, 0.,
+                        0., 0., 0., 1.;
+
+                Matrix4f scale;
+                scale << 0.04, 0., 0., 0.,
+                    0., 0.04, 0., 0.,
+                    0., 0., 0.04, 0.,
+                    0., 0., 0., 1.;
+
+                Matrix4f translate;
+                translate << 1., 0., 0., -15,
+                    0., 1., 0., 35.,
+                    0., 0., 1., 20.,
+                    0., 0., 0., 1.;
+                Matrix4f t = translate*scale*rotate;
+                jellyfish->Set_Model_Matrix(t);            
+
+                //// bind shader to object
+                jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
+                jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+        
+            }
+
+            //jelly 4
+            {
+                //// create object by reading an obj mesh
+                auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
+
+                //// set object's transform
+                Matrix4f rotate;
+                rotate << 1, 0, 0, 0.,
+                        0, 0, -1, 0.,
+                        0., 1, 0, 0.,
+                        0., 0., 0., 1.;
+
+                Matrix4f scale;
+                scale << 0.06, 0., 0., 0.,
+                    0., 0.06, 0., 0.,
+                    0., 0., 0.06, 0.,
+                    0., 0., 0., 1.;
+
+                Matrix4f translate;
+                translate << 1., 0., 0., 0,
+                    0., 1., 0., 45.,
+                    0., 0., 1., 15.,
+                    0., 0., 0., 1.;
+                Matrix4f t = translate*scale*rotate;
+                jellyfish->Set_Model_Matrix(t);            
+
+                //// bind shader to object
+                jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
+                jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+        
+            }
+
         }
 
         //// Here we show an example of adding a mesh with noise-terrain (A6)
