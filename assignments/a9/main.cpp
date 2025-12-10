@@ -76,7 +76,7 @@ public:
         OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/buzz_color.png", "buzz_color");
         OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/star.png", "star_color");
         OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/bluegray.png", "bluegray");
-        OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/bubble.png", "bubble");
+        OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/jelyfish.png", "jelly");
         //// Add all the lights you need for the scene (no more than 4 lights)
         //// The four parameters are position, ambient, diffuse, and specular.
         //// The lights you declared here will be synchronized to all shaders in uniform lights.
@@ -413,11 +413,73 @@ public:
             sphere3->Set_Model_Matrix(t);
 
             //// bind shader to object
-            // OpenGLTextureLibrary::Instance()->Add_Texture_From_File("tex/watercolor.png", "water_color"); //converts the transparent png
             sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("environment"));
-            //sphere3->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+        }
 
-            //sphere3->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("water_color")); // adding it to the sphere's texture
+        // alpha blending to add clear jellyfish
+
+        //jelly 1
+        {
+            //// create object by reading an obj mesh
+            auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
+
+            //// set object's transform
+			Matrix4f rotate;
+            rotate << 1, 0, 0, 0.,
+				    0, 0, -1, 0.,
+				    0., 1, 0, 0.,
+				    0., 0., 0., 1.;
+
+            Matrix4f scale;
+			scale << 0.08, 0., 0., 0.,
+				0., 0.08, 0., 0.,
+				0., 0., 0.08, 0.,
+				0., 0., 0., 1.;
+
+			Matrix4f translate;
+			translate << 1., 0., 0., 0.,
+				0., 1., 0., -45.,
+				0., 0., 1., -10.,
+				0., 0., 0., 1.;
+			Matrix4f t = translate*scale*rotate;
+            jellyfish->Set_Model_Matrix(t);            
+
+            //// bind shader to object
+            jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
+            jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+      
+        }
+
+        //jelly 2
+        {
+            //// create object by reading an obj mesh
+            auto jellyfish = Add_Obj_Mesh_Object("obj/jellyfish.obj");
+
+            //// set object's transform
+			Matrix4f rotate;
+            rotate << 1, 0, 0, 0.,
+				    0, 0, -1, 0.,
+				    0., 1, 0, 0.,
+				    0., 0., 0., 1.;
+
+            Matrix4f scale;
+			scale << 0.04, 0., 0., 0.,
+				0., 0.04, 0., 0.,
+				0., 0., 0.04, 0.,
+				0., 0., 0., 1.;
+
+			Matrix4f translate;
+			translate << 1., 0., 0., 5,
+				0., 1., 0., -35.,
+				0., 0., 1., -20.,
+				0., 0., 0., 1.;
+			Matrix4f t = translate*scale*rotate;
+            jellyfish->Set_Model_Matrix(t);            
+
+            //// bind shader to object
+            jellyfish->Add_Texture("tex_color", OpenGLTextureLibrary::Get_Texture("jelly")); 
+            jellyfish->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("blend")); // bind shader to object
+      
         }
 
         //// Here we show an example of adding a mesh with noise-terrain (A6)
