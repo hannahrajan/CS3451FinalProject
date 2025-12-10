@@ -59,8 +59,7 @@ endif()
 add_library(glfw STATIC IMPORTED)
 
 set_target_properties(glfw PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/usr/local/include"
-  INTERFACE_LINK_LIBRARIES "-framework Cocoa;-framework IOKit;-framework CoreFoundation;-framework CoreVideo"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Program Files (x86)/cs3451-computer-graphics/include"
 )
 
 # Load information for each installed configuration.

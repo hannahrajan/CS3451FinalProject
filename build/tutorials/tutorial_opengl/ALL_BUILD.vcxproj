@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07DE6E3A-84F9-3460-995F-64B34E62F078}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\glad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\glad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\glad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\glad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_opengl\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\ZERO_CHECK.vcxproj">
+      <Project>{259C9D6A-F631-3A75-A3F6-0A9C545CB561}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\boing.vcxproj">
+      <Project>{04EC53ED-FC17-326B-8211-10D04CAA1826}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\clipboard.vcxproj">
+      <Project>{1D9485F7-931E-3DE5-A472-E42EA6438658}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\cursor.vcxproj">
+      <Project>{847B3FF7-BC2A-3688-B168-9096EAE4CECE}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\empty.vcxproj">
+      <Project>{AEB24128-43E9-358D-8A32-CBAD473E6FA1}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\events.vcxproj">
+      <Project>{5DF1EF75-AB73-3F33-979E-47BD2E9F0554}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\gamma.vcxproj">
+      <Project>{63CE65FC-72FC-32E1-A9D2-C6B08567FF93}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\gears.vcxproj">
+      <Project>{F8E41A94-EF2D-3FAF-A08F-C66FAE6BC9EF}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\src\glfw.vcxproj">
+      <Project>{A557E1CD-177C-33F1-B69B-CEFC07983154}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\glfwinfo.vcxproj">
+      <Project>{34F113C9-565B-3B68-91EB-1C360FA146B7}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\heightmap.vcxproj">
+      <Project>{7EEE37EF-C58B-327A-8D04-E14A6BD08857}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\icon.vcxproj">
+      <Project>{0B95B871-8BB0-3005-A3C4-7258EDA06D67}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\iconify.vcxproj">
+      <Project>{F2E0C98B-3113-3FE7-A18B-D718C6202BA2}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\inputlag.vcxproj">
+      <Project>{44CFCB26-3636-36CA-AF81-588CE46D66FB}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\joysticks.vcxproj">
+      <Project>{E6267D5B-6B98-3DFB-835E-351458A60ED2}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\monitors.vcxproj">
+      <Project>{1C8014DC-AA44-354A-9BB6-B708BCE8F16B}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\msaa.vcxproj">
+      <Project>{164CB507-E6E5-35F2-95E3-5749EC8D4450}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\offscreen.vcxproj">
+      <Project>{6C89E0E4-7D7D-3F3E-946C-859F08BB1FD9}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\opacity.vcxproj">
+      <Project>{3FEC1536-6F3D-3EDF-A789-E16AEF6CE9A3}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\particles.vcxproj">
+      <Project>{0B799F87-52B6-369E-B0F7-61BA4EFE1857}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\reopen.vcxproj">
+      <Project>{B39833F2-9FA8-3DED-AF13-96A2E9B90ED2}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\sharing.vcxproj">
+      <Project>{1D7293B0-A3C7-35CB-9F70-818E4EFE581D}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\simple.vcxproj">
+      <Project>{0E02718A-BAE8-37DD-BE69-67C0549353B6}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\splitview.vcxproj">
+      <Project>{6C5F58ED-B7D3-326C-98B7-FC9222701153}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\tearing.vcxproj">
+      <Project>{140ABA1F-6251-3071-913B-85A8D8947D23}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\threads.vcxproj">
+      <Project>{F31A502F-FF36-30BD-8A40-B1221ED71383}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\timeout.vcxproj">
+      <Project>{F4611A6B-42DE-3A39-82E2-835B73A1AE89}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\title.vcxproj">
+      <Project>{A8B6D4B6-1038-3C58-B0A2-59FA2F4B5802}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\tutorial_opengl.vcxproj">
+      <Project>{79005181-792E-37F8-BC43-76B44A0E95FB}</Project>
+      <Name>tutorial_opengl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\vulkan.vcxproj">
+      <Project>{C18295F2-3B18-3901-B618-0282EABAD4AB}</Project>
+      <Name>vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\examples\wave.vcxproj">
+      <Project>{5A788B19-6E01-3677-91F4-6BA2AEFDA3C4}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_opengl\glfw-3.3\tests\windows.vcxproj">
+      <Project>{B80C9771-8508-3977-A778-267BEC4F194B}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

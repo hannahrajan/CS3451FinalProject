@@ -9,21 +9,36 @@ layout(std140) uniform camera
     vec4 position;
 };
 
-uniform mat4 model;
+uniform mat4 model;		/*model matrix*/
 
-layout(location = 0) in vec4 pos;
-layout(location = 2) in vec4 normal;
-layout(location = 3) in vec4 uv;
+/*input variables*/
+layout(location = 0) in vec4 pos;			/*vertex position*/
+layout(location = 1) in vec4 v_color;		/*vertex color*/
+layout(location = 2) in vec4 normal;		/*vertex normal*/
+layout(location = 3) in vec4 uv; 			/*vertex uv*/
+layout(location = 4) in vec4 tangent;	    /*vertex tangent*/
 
-out vec3 vtx_pos;
-out vec3 vtx_normal;
+/*output variables*/
+out vec4 vtx_color;
+out vec3 vtx_normal; // world space normal
+out vec3 vtx_position; // world space position
+out vec3 vtx_model_position; // model space position
 out vec2 vtx_uv;
+out vec3 vtx_tangent;
 
 void main()
 {
-    vtx_pos = (model * vec4(pos.xyz, 1.)).xyz;
-    vtx_normal = normalize((model * vec4(normal.xyz, 0.)).xyz);
+	vec4 worldPos = model * vec4(pos.xyz, 1.);
+    // ! do not support non-uniform scale
+    vec4 worldNormal = model * vec4(normal.xyz, 0.);
+    vec4 worldTangent = model * vec4(tangent.xyz, 0.);
+
+    vtx_normal = normalize(worldNormal.xyz);
+    vtx_model_position = pos.xyz;
+    vtx_position = worldPos.xyz;
+    vtx_color = vec4(v_color.rgb, 1.);
     vtx_uv = uv.xy;
-    
-    gl_Position = pvm * vec4(pos.xyz, 1.);
+    vtx_tangent = worldTangent.xyz;
+
+    gl_Position = pvm * worldPos;
 }
