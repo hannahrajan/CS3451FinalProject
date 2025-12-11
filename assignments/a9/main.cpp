@@ -83,7 +83,7 @@ public:
         //// You may access these lights using lt[0].pos, lt[1].amb, lt[1].dif, etc.
         //// You can also create your own lights by directly declaring them in a shader without using Add_Light().
         //// Here we declared three default lights for you. Feel free to add/delete/change them at your will.
-
+        //outside the sphere
         opengl_window->Add_Light(Vector3f(0, 0, 100), Vector3f(0.05, 0.05, 0.05), Vector3f(242 / 255., 194 / 255., 80 / 255.), Vector3f(0.4, 0.4, 0.4));
         
         //// Add the background / environment
@@ -571,7 +571,7 @@ public:
             shark->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("basic"));
         }
         
-        /*//// Here we show an example of adding a mesh with noise-terrain (A6)
+        //// Here we show an example of adding a mesh with noise-terrain (A6)
         {
             //// create object by reading an obj mesh
             auto terrain = Add_Obj_Mesh_Object("obj/plane.obj");
@@ -593,7 +593,7 @@ public:
 
             //// bind shader to object (we do not bind texture for this object because we create noise for texture)
             terrain->Add_Shader_Program(OpenGLShaderLibrary::Get_Shader("terrain"));
-        }*/
+        }
         //// KAYLA ADDED THIS HERE - 'transparent' sphere for water (edited the env.frag for transparent effect)
         {
             //// create object by reading an obj mesh
