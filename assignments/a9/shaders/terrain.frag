@@ -160,10 +160,11 @@ void main()
 	float radius = 2.5;
     vec2 center = vec2(2.5);
     float dist = length(vtx_pos.xy - center);
-    
-    // Create circular mask with 1.0 inside, 0.0 outside
-    float circle_mask = step(dist, radius);
-	//frag_color = vec4(shading_terrain(vtx_pos), 1.0);
-    frag_color = mix(vec4(0.0, 0.0, 0.0, 0.0), vec4(shading_terrain(vtx_pos), 1.0), circle_mask);
+
+	if (dist > radius) { //remove pixels outside radius
+        discard; 
+    }
+
+    frag_color = vec4(shading_terrain(vtx_pos), 1.0);
     
 }

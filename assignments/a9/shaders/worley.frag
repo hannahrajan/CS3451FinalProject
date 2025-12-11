@@ -49,7 +49,9 @@ uniform sampler2D texture_color;
 uniform samplerCube skybox;
 
 vec2 hash2(vec2 p) {
-    return mod((34.0 * p + 1.0) * p, 289.0) / 289.0;
+    p = vec2(dot(p, vec2(127.1, 311.7)),
+             dot(p, vec2(269.5, 183.3)));
+    return fract(sin(p) * 43758.5453);
 }
 
 float worley_noise_2d(vec2 p)
@@ -57,7 +59,8 @@ float worley_noise_2d(vec2 p)
     vec2 i = floor(p);
     vec2 f = fract(p);
     
-    float noise = 1.0;
+    float f1 = 1.0; // Closest
+    float f2 = 1.0; // Second closest
     
     for (int x = -1; x <= 1; x++) {
         for (int y = -1; y <= 1; y++) {
@@ -65,11 +68,17 @@ float worley_noise_2d(vec2 p)
 			vec2 feature = hash2(i + neighbor);
 			feature = 0.5 + 0.25 * sin(iTime + 6.2831 * feature);
 			float dist = length(neighbor + feature - f);
-			noise = min(noise, dist);
+            
+			if (dist < f1) {
+                f2 = f1;
+                f1 = dist;
+            } else if (dist < f2) {
+                f2 = dist;
+            }
         }
     }
     
-    return noise;
+    return f2 - f1;
 }
 
 float noiseOctave_2d(vec2 v, int num)
@@ -118,7 +127,7 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
     vec2 sample_pos = sphere_uv * scale;
     
     // Get 3D Worley noise
-    float noise = noiseOctave_2d(sample_pos, 1);
+    float noise = noiseOctave_2d(sample_pos, 6);
     
     // Make cells more distinct
     noise = smoothstep(0.4, 0.6, noise);
@@ -126,13 +135,14 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 	vec3 n = normal;
 	vec3 e = position.xyz;
 	vec3 p = world_pos;
-    vec3 color = vec3(0.0);
-    for (int i = 1; i < 2; i++) {
+    vec3 color = vec3(0.1);
+    for (int i = 1; i < lt_att[0]; i++) {
         vec3 s = lt[i].pos.xyz;
         color += shading_texture_with_phong(lt[i], e, p, s, n, uv).xyz;
     }
-	color = color * mix(0.9, 1.1, noise); // Grayscale first	
-    
+    color = clamp(color, 0.0, 1.0);
+	color = color * mix(1.5, 0.7, noise); // Grayscale first	
+
     return color;
 
 }
@@ -140,16 +150,20 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 
 vec3 shading_worley_with_reflection(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 {
+    vec3 view_dir = normalize(position.xyz - world_pos);
+    if (dot(normal, view_dir) < 0.0) {
+        normal = -normal; // Flip back-face normals
+    }
     // Get Worley Noise
-	vec3 worley_color = shading_worley_sphere(world_pos, model_pos, normal, uv);	
-    
+	vec3 worley_color = shading_worley_sphere(world_pos, model_pos, normal, uv);
+
     // Skybox reflection!
     vec3 I = normalize(position.xyz - world_pos);
     vec3 R = reflect(I, normal);
     vec3 reflection = texture(skybox, vec3(R.x, -R.y, -R.z)).rgb;
     
     // Worley + reflection!
-    float reflection_strength = 0.8; 
+    float reflection_strength = 0.5; 
     vec3 final_color = mix(worley_color, reflection, reflection_strength);
     
     return final_color;
@@ -157,5 +171,5 @@ vec3 shading_worley_with_reflection(vec3 world_pos, vec3 model_pos, vec3 normal,
 
 void main()
 {
-    frag_color = vec4(shading_worley_with_reflection(vtx_position, vtx_model_position, normalize(vtx_normal), vtx_uv), 1.0);
+    frag_color = vec4(shading_worley_with_reflection(vtx_position, vtx_model_position, normalize(vtx_normal), vtx_uv), 0.5);
 }

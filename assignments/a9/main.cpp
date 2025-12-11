@@ -86,11 +86,12 @@ public:
 
 
         //inside the sphere
-        opengl_window->Add_Light(Vector3f(0, 0, -100), Vector3f(0.1, 0.1, 0.1), Vector3f(1, 1, 1), Vector3f(0.9, 0.9, 0.9)); 
-        opengl_window->Add_Light(Vector3f(0, 0, 0), Vector3f(0.5, 0.5, 0.5), Vector3f(1, 1, 1), Vector3f(0.0, 0.0, 0.0));
+        //opengl_window->Add_Light(Vector3f(0, 0, -100), Vector3f(0.1, 0.1, 0.1), Vector3f(1, 1, 1), Vector3f(0.5, 0.5, 0.5)); 
+        //opengl_window->Add_Light(Vector3f(0, 0, 0), Vector3f(0.5, 0.5, 0.5), Vector3f(1, 1, 1), Vector3f(0.0, 0.0, 0.0));
+        
 
         //outside the sphere
-        //opengl_window->Add_Light(Vector3f(0, 0, 15), Vector3f(0.1, 0.1, 0.1), Vector3f(242 / 255., 194 / 255., 80 / 255.), Vector3f(0.9, 0.9, 0.9));
+        opengl_window->Add_Light(Vector3f(0, 0, 100), Vector3f(0.05, 0.05, 0.05), Vector3f(242 / 255., 194 / 255., 80 / 255.), Vector3f(0.4, 0.4, 0.4));
         
         //// Add the background / environment
         //// Here we provide you with four default options to create the background of your scene:
