@@ -115,7 +115,11 @@ vec3 shading_terrain(vec3 pos) {
     n = normalize((model * vec4(n, 0)).xyz);
     p = (model * vec4(p, 1)).xyz;
 	
-    vec3 color = shading_phong(lt[0], e, p, s, n).xyz;
+    vec3 color = vec3(0.0);
+    for (int i = 0; i < lt_att[0]; i++) {
+        vec3 s = lt[i].pos.xyz;
+        color += shading_phong(lt[i], e, p, s, n).xyz;
+    }
 	
 	float h = pos.z + .8;
 	h = clamp(h, 0.0, 1.0);

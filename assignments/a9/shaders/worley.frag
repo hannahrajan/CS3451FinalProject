@@ -126,8 +126,11 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 	vec3 n = normal;
 	vec3 e = position.xyz;
 	vec3 p = world_pos;
-	vec3 s = lt[0].pos.xyz;
-    vec3 color = shading_texture_with_phong(lt[0], e, p, s, n, uv).xyz;
+    vec3 color = vec3(0.0);
+    for (int i = 1; i < 2; i++) {
+        vec3 s = lt[i].pos.xyz;
+        color += shading_texture_with_phong(lt[i], e, p, s, n, uv).xyz;
+    }
 	color = color * mix(0.9, 1.1, noise); // Grayscale first	
     
     return color;
@@ -154,5 +157,5 @@ vec3 shading_worley_with_reflection(vec3 world_pos, vec3 model_pos, vec3 normal,
 
 void main()
 {
-    frag_color = vec4(shading_worley_with_reflection(vtx_position, vtx_model_position, normalize(vtx_normal), vtx_uv), 0.5);
+    frag_color = vec4(shading_worley_with_reflection(vtx_position, vtx_model_position, normalize(vtx_normal), vtx_uv), 1.0);
 }
