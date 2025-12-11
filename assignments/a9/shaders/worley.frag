@@ -117,6 +117,18 @@ vec2 sphericalUV(vec3 pos) {
     return vec2(u, v);
 }
 
+//replace typical lighting to get a "sunset" effect
+vec3 sunset_lighting(vec3 world_pos, vec3 normal, vec2 uv)
+{
+    vec3 sun_dir = normalize(vec3(-0.7, 0.2, 0.5)); //sun location
+
+    float sun_dot = max(dot(normal, sun_dir), 0.0); //colors based on where sun is
+    
+    vec3 sunset_color = mix(vec3(0.1, 0.1, 0.2), vec3(1.0, 0.5, 0.1), sun_dot); //gradient for "sunset"
+    
+    return sunset_color;
+}
+
 vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 {
 	//3D position -> Spherical coordinates
@@ -135,13 +147,12 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 	vec3 n = normal;
 	vec3 e = position.xyz;
 	vec3 p = world_pos;
-    vec3 color = vec3(0.1);
-    for (int i = 1; i < lt_att[0]; i++) {
-        vec3 s = lt[i].pos.xyz;
-        color += shading_texture_with_phong(lt[i], e, p, s, n, uv).xyz;
-    }
-    color = clamp(color, 0.0, 1.0);
-	color = color * mix(1.5, 0.7, noise); // Grayscale first	
+    vec3 color = sunset_lighting(world_pos, normal, uv);
+    float edges = fwidth(noise) * 2.0; //gradient, creating outline for all noise
+    vec3 edge_color = vec3(1.0, 0.8, 0.6); //"glow" color
+    color = mix(color, edge_color, edges);
+    
+    return clamp(color, 0.0, 1.0);
 
     return color;
 
