@@ -96,6 +96,7 @@ float noiseOctave_2d(vec2 v, int num)
     return sum;
 }
 
+/*
 vec4 shading_texture_with_phong(light li, vec3 e, vec3 p, vec3 s, vec3 n, vec2 uv) 
 {
     vec3 v = normalize(e - p);
@@ -110,6 +111,7 @@ vec4 shading_texture_with_phong(light li, vec3 e, vec3 p, vec3 s, vec3 n, vec2 u
 
     return vec4(ambColor + difColor + specColor, 1);
 }
+*/
 
 vec2 sphericalUV(vec3 pos) {
     float u = atan(pos.z, pos.x) / (2.0 * 3.14159);
@@ -117,10 +119,11 @@ vec2 sphericalUV(vec3 pos) {
     return vec2(u, v);
 }
 
+
 //replace typical lighting to get a "sunset" effect
 vec3 sunset_lighting(vec3 world_pos, vec3 normal, vec2 uv)
 {
-    vec3 sun_dir = normalize(vec3(-0.7, 0.2, 0.5)); //sun location
+    vec3 sun_dir = normalize(vec3(-0.7, -2, -1)); //sun location
 
     float sun_dot = max(dot(normal, sun_dir), 0.0); //colors based on where sun is
     
@@ -148,7 +151,7 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 	vec3 e = position.xyz;
 	vec3 p = world_pos;
     vec3 color = sunset_lighting(world_pos, normal, uv);
-    float edges = fwidth(noise) * 2.0; //gradient, creating outline for all noise
+    float edges = fwidth(noise) / 2.0; //gradient, creating outline for all noise
     vec3 edge_color = vec3(1.0, 0.8, 0.6); //"glow" color
     color = mix(color, edge_color, edges);
     
@@ -161,10 +164,6 @@ vec3 shading_worley_sphere(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 
 vec3 shading_worley_with_reflection(vec3 world_pos, vec3 model_pos, vec3 normal, vec2 uv)
 {
-    vec3 view_dir = normalize(position.xyz - world_pos);
-    if (dot(normal, view_dir) < 0.0) {
-        normal = -normal; // Flip back-face normals
-    }
     // Get Worley Noise
 	vec3 worley_color = shading_worley_sphere(world_pos, model_pos, normal, uv);
 
