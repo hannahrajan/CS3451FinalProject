@@ -43,7 +43,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -72,9 +72,9 @@ events:
       The output was:
       0
       MSBuild version 17.14.19+164abd434 for .NET Framework
-      Build started 12/8/2025 8:26:15 PM.
+      Build started 12/10/2025 8:46:46 PM.
       
-      Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -87,7 +87,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -95,13 +95,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.65
+      Time Elapsed 00:00:01.28
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -109,7 +109,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/4.1.0/CompilerIdC/CompilerIdC.exe
+        C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/4.1.0/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "find-v1"
@@ -142,7 +142,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -153,6 +153,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
@@ -167,7 +168,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -211,7 +212,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -222,6 +223,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
@@ -251,9 +253,9 @@ events:
       - "C:/Program Files/Git/cmd/lld-link.com"
       - "C:/Program Files/Git/cmd/lld-link.exe"
       - "C:/Program Files/Git/cmd/lld-link"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.com"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.exe"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Program Files/CMake/bin/lld-link.com"
       - "C:/Program Files/CMake/bin/lld-link.exe"
       - "C:/Program Files/CMake/bin/lld-link"
@@ -284,6 +286,9 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/lld-link.com"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/lld-link.exe"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/lld-link"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/kayla/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/kayla/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/kayla/AppData/Roaming/npm/lld-link"
@@ -298,7 +303,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -340,7 +345,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -351,6 +356,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
@@ -365,7 +371,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -407,7 +413,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -418,6 +424,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
@@ -447,9 +454,9 @@ events:
       - "C:/Program Files/Git/cmd/mt.com"
       - "C:/Program Files/Git/cmd/mt.exe"
       - "C:/Program Files/Git/cmd/mt"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/mt.com"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/mt.exe"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/mt"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/mt.com"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/mt.exe"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/mt"
       - "C:/Program Files/CMake/bin/mt.com"
       - "C:/Program Files/CMake/bin/mt.exe"
       - "C:/Program Files/CMake/bin/mt"
@@ -480,6 +487,9 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/mt.com"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/mt.exe"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/mt"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/mt.com"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/mt.exe"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/mt"
       - "C:/Users/kayla/AppData/Roaming/npm/mt.com"
       - "C:/Users/kayla/AppData/Roaming/npm/mt.exe"
       - "C:/Users/kayla/AppData/Roaming/npm/mt"
@@ -494,7 +504,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -536,7 +546,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -547,6 +557,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
@@ -561,7 +572,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -609,7 +620,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -638,9 +649,9 @@ events:
       The output was:
       0
       MSBuild version 17.14.19+164abd434 for .NET Framework
-      Build started 12/8/2025 8:26:16 PM.
+      Build started 12/10/2025 8:46:47 PM.
       
-      Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -653,7 +664,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -661,13 +672,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.65
+      Time Elapsed 00:00:01.04
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -675,7 +686,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/4.1.0/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/4.1.0/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "find-v1"
@@ -708,7 +719,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -719,6 +730,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
@@ -748,9 +760,9 @@ events:
       - "C:/Program Files/Git/cmd/lld-link.com"
       - "C:/Program Files/Git/cmd/lld-link.exe"
       - "C:/Program Files/Git/cmd/lld-link"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.com"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.exe"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Program Files/CMake/bin/lld-link.com"
       - "C:/Program Files/CMake/bin/lld-link.exe"
       - "C:/Program Files/CMake/bin/lld-link"
@@ -781,6 +793,9 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/lld-link.com"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/lld-link.exe"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/lld-link"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/lld-link"
       - "C:/Users/kayla/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/kayla/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/kayla/AppData/Roaming/npm/lld-link"
@@ -795,7 +810,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -839,7 +854,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -850,6 +865,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
@@ -888,9 +904,9 @@ events:
       - "C:/Program Files/Git/cmd/rc.com"
       - "C:/Program Files/Git/cmd/rc.exe"
       - "C:/Program Files/Git/cmd/rc"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/rc.com"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/rc.exe"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/rc"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/rc.com"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/rc.exe"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/rc"
       - "C:/Program Files/CMake/bin/rc.com"
       - "C:/Program Files/CMake/bin/rc.exe"
       - "C:/Program Files/CMake/bin/rc"
@@ -921,6 +937,9 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/rc.com"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/rc.exe"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/rc"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/rc.com"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/rc.exe"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/rc"
       - "C:/Users/kayla/AppData/Roaming/npm/rc.com"
       - "C:/Users/kayla/AppData/Roaming/npm/rc.exe"
       - "C:/Users/kayla/AppData/Roaming/npm/rc"
@@ -971,7 +990,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
@@ -999,8 +1018,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-5c7srf"
-      binary: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-5c7srf"
+      source: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-77pjzu"
+      binary: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-77pjzu"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -1008,40 +1027,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-5c7srf'
+        Change Dir: 'C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-77pjzu'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_09ca1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6e1fa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.19+164abd434 for .NET Framework
-        Build started 12/8/2025 8:26:18 PM.
+        Build started 12/10/2025 8:46:49 PM.
         
-        Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5c7srf\\cmTC_09ca1.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77pjzu\\cmTC_6e1fa.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_09ca1.dir\\Debug\\".
+          Creating directory "cmTC_6e1fa.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5c7srf\\Debug\\".
-          Creating directory "cmTC_09ca1.dir\\Debug\\cmTC_09ca1.tlog\\".
+          Creating directory "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77pjzu\\Debug\\".
+          Creating directory "cmTC_6e1fa.dir\\Debug\\cmTC_6e1fa.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_09ca1.dir\\Debug\\cmTC_09ca1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_09ca1.dir\\Debug\\cmTC_09ca1.tlog\\unsuccessfulbuild".
+          Creating "cmTC_6e1fa.dir\\Debug\\cmTC_6e1fa.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6e1fa.dir\\Debug\\cmTC_6e1fa.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_09ca1.dir\\Debug\\\\" /Fd"cmTC_09ca1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_6e1fa.dir\\Debug\\\\" /Fd"cmTC_6e1fa.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_09ca1.dir\\Debug\\\\" /Fd"cmTC_09ca1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_6e1fa.dir\\Debug\\\\" /Fd"cmTC_6e1fa.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5c7srf\\Debug\\cmTC_09ca1.exe" /INCREMENTAL /ILK:"cmTC_09ca1.dir\\Debug\\cmTC_09ca1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-5c7srf/Debug/cmTC_09ca1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-5c7srf/Debug/cmTC_09ca1.lib" /MACHINE:X64  /machine:x64 cmTC_09ca1.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_09ca1.vcxproj -> C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5c7srf\\Debug\\cmTC_09ca1.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77pjzu\\Debug\\cmTC_6e1fa.exe" /INCREMENTAL /ILK:"cmTC_6e1fa.dir\\Debug\\cmTC_6e1fa.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-77pjzu/Debug/cmTC_6e1fa.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-77pjzu/Debug/cmTC_6e1fa.lib" /MACHINE:X64  /machine:x64 cmTC_6e1fa.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_6e1fa.vcxproj -> C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77pjzu\\Debug\\cmTC_6e1fa.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_09ca1.dir\\Debug\\cmTC_09ca1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_09ca1.dir\\Debug\\cmTC_09ca1.tlog\\cmTC_09ca1.lastbuildstate".
-        Done Building Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5c7srf\\cmTC_09ca1.vcxproj" (default targets).
+          Deleting file "cmTC_6e1fa.dir\\Debug\\cmTC_6e1fa.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6e1fa.dir\\Debug\\cmTC_6e1fa.tlog\\cmTC_6e1fa.lastbuildstate".
+        Done Building Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77pjzu\\cmTC_6e1fa.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.63
+        Time Elapsed 00:00:01.28
         
       exitCode: 0
   -
@@ -1081,8 +1100,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-e0hj5h"
-      binary: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-e0hj5h"
+      source: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-b208z2"
+      binary: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-b208z2"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -1091,40 +1110,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-e0hj5h'
+        Change Dir: 'C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-b208z2'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7b172.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_09ad9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.19+164abd434 for .NET Framework
-        Build started 12/8/2025 8:26:19 PM.
+        Build started 12/10/2025 8:46:51 PM.
         
-        Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e0hj5h\\cmTC_7b172.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b208z2\\cmTC_09ad9.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_7b172.dir\\Debug\\".
+          Creating directory "cmTC_09ad9.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e0hj5h\\Debug\\".
-          Creating directory "cmTC_7b172.dir\\Debug\\cmTC_7b172.tlog\\".
+          Creating directory "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b208z2\\Debug\\".
+          Creating directory "cmTC_09ad9.dir\\Debug\\cmTC_09ad9.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_7b172.dir\\Debug\\cmTC_7b172.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_7b172.dir\\Debug\\cmTC_7b172.tlog\\unsuccessfulbuild".
+          Creating "cmTC_09ad9.dir\\Debug\\cmTC_09ad9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_09ad9.dir\\Debug\\cmTC_09ad9.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_7b172.dir\\Debug\\\\" /Fd"cmTC_7b172.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_09ad9.dir\\Debug\\\\" /Fd"cmTC_09ad9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_7b172.dir\\Debug\\\\" /Fd"cmTC_7b172.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_09ad9.dir\\Debug\\\\" /Fd"cmTC_09ad9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e0hj5h\\Debug\\cmTC_7b172.exe" /INCREMENTAL /ILK:"cmTC_7b172.dir\\Debug\\cmTC_7b172.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-e0hj5h/Debug/cmTC_7b172.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-e0hj5h/Debug/cmTC_7b172.lib" /MACHINE:X64  /machine:x64 cmTC_7b172.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_7b172.vcxproj -> C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e0hj5h\\Debug\\cmTC_7b172.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b208z2\\Debug\\cmTC_09ad9.exe" /INCREMENTAL /ILK:"cmTC_09ad9.dir\\Debug\\cmTC_09ad9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-b208z2/Debug/cmTC_09ad9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-b208z2/Debug/cmTC_09ad9.lib" /MACHINE:X64  /machine:x64 cmTC_09ad9.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_09ad9.vcxproj -> C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b208z2\\Debug\\cmTC_09ad9.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_7b172.dir\\Debug\\cmTC_7b172.tlog\\unsuccessfulbuild".
-          Touching "cmTC_7b172.dir\\Debug\\cmTC_7b172.tlog\\cmTC_7b172.lastbuildstate".
-        Done Building Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e0hj5h\\cmTC_7b172.vcxproj" (default targets).
+          Deleting file "cmTC_09ad9.dir\\Debug\\cmTC_09ad9.tlog\\unsuccessfulbuild".
+          Touching "cmTC_09ad9.dir\\Debug\\cmTC_09ad9.tlog\\cmTC_09ad9.lastbuildstate".
+        Done Building Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b208z2\\cmTC_09ad9.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.56
+        Time Elapsed 00:00:01.21
         
       exitCode: 0
   -
@@ -1166,50 +1185,50 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-oayckc"
-      binary: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-oayckc"
+      source: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-sy8txv"
+      binary: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-sy8txv"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_opengl/glfw-3.3/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_opengl/glfw-3.3/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-oayckc'
+        Change Dir: 'C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-sy8txv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a428b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1f168.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.19+164abd434 for .NET Framework
-        Build started 12/8/2025 8:26:21 PM.
+        Build started 12/10/2025 8:46:53 PM.
         
-        Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\cmTC_a428b.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\cmTC_1f168.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_a428b.dir\\Debug\\".
+          Creating directory "cmTC_1f168.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\Debug\\".
-          Creating directory "cmTC_a428b.dir\\Debug\\cmTC_a428b.tlog\\".
+          Creating directory "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\Debug\\".
+          Creating directory "cmTC_1f168.dir\\Debug\\cmTC_1f168.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_a428b.dir\\Debug\\cmTC_a428b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_a428b.dir\\Debug\\cmTC_a428b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1f168.dir\\Debug\\cmTC_1f168.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1f168.dir\\Debug\\cmTC_1f168.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a428b.dir\\Debug\\\\" /Fd"cmTC_a428b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1f168.dir\\Debug\\\\" /Fd"cmTC_1f168.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a428b.dir\\Debug\\\\" /Fd"cmTC_a428b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\src.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1f168.dir\\Debug\\\\" /Fd"cmTC_1f168.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\src.c"
           src.c
-        C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\cmTC_a428b.vcxproj]
-        Done Building Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\cmTC_a428b.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\cmTC_1f168.vcxproj]
+        Done Building Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\cmTC_1f168.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\cmTC_a428b.vcxproj" (default target) (1) ->
+        "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\cmTC_1f168.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oayckc\\cmTC_a428b.vcxproj]
+          C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy8txv\\cmTC_1f168.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.38
+        Time Elapsed 00:00:00.76
         
       exitCode: 1
   -
@@ -1222,52 +1241,52 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-vtiw3p"
-      binary: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-vtiw3p"
+      source: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-mh8618"
+      binary: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-mh8618"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_opengl/glfw-3.3/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_opengl/glfw-3.3/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-vtiw3p'
+        Change Dir: 'C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-mh8618'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a589e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8ee51.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.19+164abd434 for .NET Framework
-        Build started 12/8/2025 8:26:21 PM.
+        Build started 12/10/2025 8:46:55 PM.
         
-        Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\cmTC_a589e.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\cmTC_8ee51.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_a589e.dir\\Debug\\".
+          Creating directory "cmTC_8ee51.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\Debug\\".
-          Creating directory "cmTC_a589e.dir\\Debug\\cmTC_a589e.tlog\\".
+          Creating directory "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\Debug\\".
+          Creating directory "cmTC_8ee51.dir\\Debug\\cmTC_8ee51.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_a589e.dir\\Debug\\cmTC_a589e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_a589e.dir\\Debug\\cmTC_a589e.tlog\\unsuccessfulbuild".
+          Creating "cmTC_8ee51.dir\\Debug\\cmTC_8ee51.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_8ee51.dir\\Debug\\cmTC_8ee51.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a589e.dir\\Debug\\\\" /Fd"cmTC_a589e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8ee51.dir\\Debug\\\\" /Fd"cmTC_8ee51.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a589e.dir\\Debug\\\\" /Fd"cmTC_a589e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8ee51.dir\\Debug\\\\" /Fd"cmTC_8ee51.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\Debug\\cmTC_a589e.exe" /INCREMENTAL /ILK:"cmTC_a589e.dir\\Debug\\cmTC_a589e.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-vtiw3p/Debug/cmTC_a589e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-vtiw3p/Debug/cmTC_a589e.lib" /MACHINE:X64  /machine:x64 cmTC_a589e.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\cmTC_a589e.vcxproj]
-        Done Building Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\cmTC_a589e.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\Debug\\cmTC_8ee51.exe" /INCREMENTAL /ILK:"cmTC_8ee51.dir\\Debug\\cmTC_8ee51.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-mh8618/Debug/cmTC_8ee51.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-mh8618/Debug/cmTC_8ee51.lib" /MACHINE:X64  /machine:x64 cmTC_8ee51.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\cmTC_8ee51.vcxproj]
+        Done Building Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\cmTC_8ee51.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\cmTC_a589e.vcxproj" (default target) (1) ->
+        "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\cmTC_8ee51.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vtiw3p\\cmTC_a589e.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mh8618\\cmTC_8ee51.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.47
+        Time Elapsed 00:00:01.09
         
       exitCode: 1
   -
@@ -1280,52 +1299,52 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-ksn2jv"
-      binary: "C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-ksn2jv"
+      source: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-3v49hq"
+      binary: "C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-3v49hq"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_opengl/glfw-3.3/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_opengl/glfw-3.3/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-ksn2jv'
+        Change Dir: 'C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-3v49hq'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_77f18.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2cdd7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.19+164abd434 for .NET Framework
-        Build started 12/8/2025 8:26:22 PM.
+        Build started 12/10/2025 8:46:56 PM.
         
-        Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\cmTC_77f18.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\cmTC_2cdd7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_77f18.dir\\Debug\\".
+          Creating directory "cmTC_2cdd7.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\Debug\\".
-          Creating directory "cmTC_77f18.dir\\Debug\\cmTC_77f18.tlog\\".
+          Creating directory "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\Debug\\".
+          Creating directory "cmTC_2cdd7.dir\\Debug\\cmTC_2cdd7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_77f18.dir\\Debug\\cmTC_77f18.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_77f18.dir\\Debug\\cmTC_77f18.tlog\\unsuccessfulbuild".
+          Creating "cmTC_2cdd7.dir\\Debug\\cmTC_2cdd7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2cdd7.dir\\Debug\\cmTC_2cdd7.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_77f18.dir\\Debug\\\\" /Fd"cmTC_77f18.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_2cdd7.dir\\Debug\\\\" /Fd"cmTC_2cdd7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_77f18.dir\\Debug\\\\" /Fd"cmTC_77f18.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_2cdd7.dir\\Debug\\\\" /Fd"cmTC_2cdd7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\Debug\\cmTC_77f18.exe" /INCREMENTAL /ILK:"cmTC_77f18.dir\\Debug\\cmTC_77f18.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-ksn2jv/Debug/cmTC_77f18.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-ksn2jv/Debug/cmTC_77f18.lib" /MACHINE:X64  /machine:x64 cmTC_77f18.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\cmTC_77f18.vcxproj]
-        Done Building Project "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\cmTC_77f18.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\Debug\\cmTC_2cdd7.exe" /INCREMENTAL /ILK:"cmTC_2cdd7.dir\\Debug\\cmTC_2cdd7.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-3v49hq/Debug/cmTC_2cdd7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/kayla/Downloads/CS3451FinalProject/build/CMakeFiles/CMakeScratch/TryCompile-3v49hq/Debug/cmTC_2cdd7.lib" /MACHINE:X64  /machine:x64 cmTC_2cdd7.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\cmTC_2cdd7.vcxproj]
+        Done Building Project "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\cmTC_2cdd7.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\cmTC_77f18.vcxproj" (default target) (1) ->
+        "C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\cmTC_2cdd7.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\kayla\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ksn2jv\\cmTC_77f18.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\kayla\\Downloads\\CS3451FinalProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3v49hq\\cmTC_2cdd7.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.44
+        Time Elapsed 00:00:01.06
         
       exitCode: 1
   -
@@ -1356,7 +1375,7 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
@@ -1367,6 +1386,7 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2023.3.2/bin/"
       - "C:/Users/ka la/AppData/Local/GitHubDesktop/bin/"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/"
       - "C:/Users/kayla/AppData/Roaming/npm/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
@@ -1410,9 +1430,9 @@ events:
       - "C:/Program Files/Git/cmd/doxygen.com"
       - "C:/Program Files/Git/cmd/doxygen.exe"
       - "C:/Program Files/Git/cmd/doxygen"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/doxygen.com"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/doxygen.exe"
-      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/doxygen"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/doxygen.com"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/doxygen.exe"
+      - "C:/Users/kayla/Downloads/CS3451FinalProject/build/%USERPROFILE%/AppData/Local/Muse Hub/lib/doxygen"
       - "C:/Program Files/CMake/bin/doxygen.com"
       - "C:/Program Files/CMake/bin/doxygen.exe"
       - "C:/Program Files/CMake/bin/doxygen"
@@ -1443,6 +1463,9 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/doxygen.com"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/doxygen.exe"
       - "C:/Program Files/JetBrains/PyCharm 2024.3.1.1/bin/doxygen"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/doxygen.com"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/doxygen.exe"
+      - "C:/Users/kayla/AppData/Local/Muse Hub/lib/doxygen"
       - "C:/Users/kayla/AppData/Roaming/npm/doxygen.com"
       - "C:/Users/kayla/AppData/Roaming/npm/doxygen.exe"
       - "C:/Users/kayla/AppData/Roaming/npm/doxygen"
@@ -1508,7 +1531,7 @@ events:
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Users\\kayla\\AppData\\Local\\Muse Hub\\lib"
+        - "%USERPROFILE%\\AppData\\Local\\Muse Hub\\lib"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"

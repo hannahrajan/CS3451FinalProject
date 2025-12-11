@@ -1,162 +1,162 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLBufferObjects.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLBufferObjects.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLMarkerObjects.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLMarkerObjects.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLObject.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLObject.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLShaderProgram.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLShaderProgram.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLTexture.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLTexture.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLViewer.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLViewer.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLWindow.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLWindow.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\glad.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\glad.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\mikktspace.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\mikktspace.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_camera\main.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_camera\main.cpp">
       <Filter>proj</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.cpp">
       <Filter>tiny_obj_loader</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.cpp">
       <Filter>tiny_obj_loader</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\stb\StbImage.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\StbImage.cpp">
       <Filter>stb</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.cpp">
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.cpp">
       <Filter>tiny_gltf</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Common.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Common.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\File.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\File.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Mesh.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Mesh.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLBgEffect.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLBgEffect.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLBufferObjects.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLBufferObjects.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLCommon.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLCommon.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLMarkerObjects.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLMarkerObjects.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLMesh.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLMesh.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLObject.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLObject.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLParticles.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLParticles.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLShaderProgram.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLShaderProgram.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLSkybox.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLSkybox.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLTexture.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLTexture.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLVectors.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLVectors.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLViewer.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLViewer.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLWindow.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLWindow.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Particles.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Particles.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\SceneGraph.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\SceneGraph.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Skeleton.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Skeleton.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\das_file_watcher.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\das_file_watcher.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\glad.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\glad.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\khrplatform.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\khrplatform.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\mikktspace.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\mikktspace.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.h">
       <Filter>tiny_obj_loader</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.h">
       <Filter>tiny_obj_loader</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\stb\StbImage.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\StbImage.h">
       <Filter>stb</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\stb\stb_image.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\stb_image.h">
       <Filter>stb</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\stb\stb_image_write.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\stb_image_write.h">
       <Filter>stb</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.h">
       <Filter>tiny_gltf</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\json.hpp">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\json.hpp">
       <Filter>tiny_gltf</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\tiny_gltf.h">
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\tiny_gltf.h">
       <Filter>tiny_gltf</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_camera\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_camera\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="proj">
-      <UniqueIdentifier>{D8D594B5-798D-38B3-9EF8-51E4F7C0C3F0}</UniqueIdentifier>
+      <UniqueIdentifier>{6EEFB1CD-EC55-3B50-A7F8-6B450A0286A3}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{CC000601-EDF7-398A-9E06-A58DCC6AED3C}</UniqueIdentifier>
+      <UniqueIdentifier>{E7AF02B5-2126-3DC7-92F7-98F58F1088DD}</UniqueIdentifier>
     </Filter>
     <Filter Include="stb">
-      <UniqueIdentifier>{9920C46D-D583-37BB-ACFC-67D9BE1AE038}</UniqueIdentifier>
+      <UniqueIdentifier>{AC43B15E-53CA-3678-BD8E-231F85AE4232}</UniqueIdentifier>
     </Filter>
     <Filter Include="tiny_gltf">
-      <UniqueIdentifier>{3E80D823-121F-35C7-B561-2CE37C3B2725}</UniqueIdentifier>
+      <UniqueIdentifier>{88867082-4C6A-3636-8C1C-C2904653417D}</UniqueIdentifier>
     </Filter>
     <Filter Include="tiny_obj_loader">
-      <UniqueIdentifier>{47A8DB2B-968D-3958-BAE4-B74C5C2C069B}</UniqueIdentifier>
+      <UniqueIdentifier>{57DFADE4-270C-3F33-A0B4-53926705F16A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

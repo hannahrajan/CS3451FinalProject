@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{ED6EF15B-D172-38D3-9119-25B09FEFABA6}</ProjectGuid>
+    <ProjectGuid>{EF653BB4-F25A-3460-A0FB-2350C3A1AA51}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">matrix.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">matrix</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">matrix.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">matrix</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">matrix.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">matrix</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">matrix.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">matrix</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -110,10 +110,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GLM_ENABLE_EXPERIMENTAL;USE_STB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -128,9 +128,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/Debug/matrix.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/Debug/matrix.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/Debug/matrix.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/Debug/matrix.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -165,10 +165,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,9 +183,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/Release/matrix.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/Release/matrix.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/Release/matrix.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/Release/matrix.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -195,7 +195,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -220,10 +220,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -238,9 +238,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/MinSizeRel/matrix.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/MinSizeRel/matrix.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/MinSizeRel/matrix.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/MinSizeRel/matrix.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -250,7 +250,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -274,10 +274,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\..\..\ext\eigen;\ext\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -292,9 +292,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/RelWithDebInfo/matrix.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/RelWithDebInfo/matrix.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/RelWithDebInfo/matrix.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/RelWithDebInfo/matrix.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -303,11 +303,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -316,11 +316,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -329,11 +329,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -342,11 +342,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_matrix/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_matrix/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -355,17 +355,17 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_matrix\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_matrix\main.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_matrix\main.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\ZERO_CHECK.vcxproj">
-      <Project>{259C9D6A-F631-3A75-A3F6-0A9C545CB561}</Project>
+    <ProjectReference Include="C:\Users\kayla\Downloads\CS3451FinalProject\build\ZERO_CHECK.vcxproj">
+      <Project>{9E8EF8B8-408A-3B7F-AFEC-8D082F7A0DBB}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

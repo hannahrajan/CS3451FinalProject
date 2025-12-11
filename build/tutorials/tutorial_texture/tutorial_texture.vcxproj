@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DD4B20BF-19E0-3C75-918D-3C58DB8474B7}</ProjectGuid>
+    <ProjectGuid>{74CCC6A6-34E5-3338-9B88-460AC02B862F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,38 +59,38 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tutorial_texture.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tutorial_texture</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\Release\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tutorial_texture.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tutorial_texture</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\MinSizeRel\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tutorial_texture.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tutorial_texture</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\RelWithDebInfo\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tutorial_texture.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tutorial_texture</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -108,16 +108,16 @@
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -127,7 +127,7 @@
     <PreBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -137,16 +137,16 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglutd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglutd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/Debug/tutorial_texture.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/Debug/tutorial_texture.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/Debug/tutorial_texture.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/Debug/tutorial_texture.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -156,7 +156,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -173,18 +173,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -194,7 +194,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PreBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -204,16 +204,16 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglut.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglut.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/Release/tutorial_texture.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/Release/tutorial_texture.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/Release/tutorial_texture.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/Release/tutorial_texture.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -223,7 +223,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -240,18 +240,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -261,7 +261,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PreBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -271,16 +271,16 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglut.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglut.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/MinSizeRel/tutorial_texture.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/MinSizeRel/tutorial_texture.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/MinSizeRel/tutorial_texture.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/MinSizeRel/tutorial_texture.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -290,7 +290,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -w</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -308,16 +308,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH="C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLM_ENABLE_EXPERIMENTAL;USE_STB;ROOT_PATH=\"C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../../\";_DISABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_obj_loader;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -327,7 +327,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PreBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/../..//ext/freeglut/bin/x64 C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -337,16 +337,16 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglut.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\..\..\\ext\freeglut\lib\x64\freeglut.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/RelWithDebInfo/tutorial_texture.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/RelWithDebInfo/tutorial_texture.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/RelWithDebInfo/tutorial_texture.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/RelWithDebInfo/tutorial_texture.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -355,11 +355,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -368,11 +368,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -381,11 +381,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -394,11 +394,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_texture/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_texture/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -407,61 +407,61 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_texture\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLBufferObjects.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLMarkerObjects.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLObject.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLShaderProgram.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLTexture.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLViewer.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLWindow.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\glad.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\src\mikktspace.cpp" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Common.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\File.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Mesh.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLBgEffect.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLBufferObjects.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLCommon.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLMarkerObjects.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLMesh.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLObject.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLParticles.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLShaderProgram.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLSkybox.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLTexture.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLVectors.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLViewer.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\OpenGLWindow.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Particles.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\SceneGraph.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\Skeleton.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\das_file_watcher.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\glad.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\khrplatform.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\src\mikktspace.h" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_texture\main.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.cpp" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.cpp" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.h" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\stb\StbImage.cpp" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\stb\StbImage.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\stb\stb_image.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\stb\stb_image_write.h" />
-    <ClCompile Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.cpp" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.h" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\json.hpp" />
-    <ClInclude Include="C:\Users\kayla\CS3451FinalProject\ext\tiny_gltf\tiny_gltf.h" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLBufferObjects.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLMarkerObjects.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLObject.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLShaderProgram.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLTexture.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLViewer.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLWindow.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\glad.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\mikktspace.cpp" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Common.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\File.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Mesh.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLBgEffect.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLBufferObjects.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLCommon.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLMarkerObjects.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLMesh.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLObject.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLParticles.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLShaderProgram.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLSkybox.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLTexture.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLVectors.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLViewer.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\OpenGLWindow.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Particles.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\SceneGraph.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\Skeleton.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\das_file_watcher.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\glad.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\khrplatform.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\src\mikktspace.h" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_texture\main.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.cpp" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.cpp" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\TinyObjLoader.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_obj_loader\tiny_obj_loader.h" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\StbImage.cpp" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\StbImage.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\stb_image.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\stb\stb_image_write.h" />
+    <ClCompile Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.cpp" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\TinyGltfLoader.h" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\json.hpp" />
+    <ClInclude Include="C:\Users\kayla\Downloads\CS3451FinalProject\ext\tiny_gltf\tiny_gltf.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\ZERO_CHECK.vcxproj">
-      <Project>{259C9D6A-F631-3A75-A3F6-0A9C545CB561}</Project>
+    <ProjectReference Include="C:\Users\kayla\Downloads\CS3451FinalProject\build\ZERO_CHECK.vcxproj">
+      <Project>{9E8EF8B8-408A-3B7F-AFEC-8D082F7A0DBB}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

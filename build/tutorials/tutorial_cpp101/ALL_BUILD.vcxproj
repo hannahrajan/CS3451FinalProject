@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{07DE6E3A-84F9-3460-995F-64B34E62F078}</ProjectGuid>
+    <ProjectGuid>{EB356E77-954C-3639-9DC4-A7336ACDEE18}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -69,7 +69,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,7 +89,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\eigen;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\src;\src;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\glm;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\freeglut\include;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\stb;C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\..\..\ext\tiny_gltf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\kayla\CS3451FinalProject\tutorials\tutorial_cpp101\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\kayla\Downloads\CS3451FinalProject\tutorials\tutorial_cpp101\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -121,11 +121,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -134,11 +134,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -147,11 +147,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kayla/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kayla/Downloads/CS3451FinalProject/tutorials/tutorial_cpp101/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-file C:/Users/kayla/Downloads/CS3451FinalProject/build/tutorials/tutorial_cpp101/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -160,7 +160,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_cpp101\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -168,14 +168,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\ZERO_CHECK.vcxproj">
-      <Project>{259C9D6A-F631-3A75-A3F6-0A9C545CB561}</Project>
+    <ProjectReference Include="C:\Users\kayla\Downloads\CS3451FinalProject\build\ZERO_CHECK.vcxproj">
+      <Project>{9E8EF8B8-408A-3B7F-AFEC-8D082F7A0DBB}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\kayla\CS3451FinalProject\build\tutorials\tutorial_cpp101\tutorial_cpp101.vcxproj">
-      <Project>{CD6EA986-49F7-3E94-BBE7-2C617C9F0D29}</Project>
+    <ProjectReference Include="C:\Users\kayla\Downloads\CS3451FinalProject\build\tutorials\tutorial_cpp101\tutorial_cpp101.vcxproj">
+      <Project>{F8D36E62-7B17-3F11-9EB4-6939D944289F}</Project>
       <Name>tutorial_cpp101</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,6 +1,6 @@
-^C:\USERS\KAYLA\CS3451FINALPROJECT\BUILD\CMAKEFILES\316E857D68A94A33B467AC58E374C28D\GENERATE.STAMP.RULE
+^C:\USERS\KAYLA\DOWNLOADS\CS3451FINALPROJECT\BUILD\CMAKEFILES\A07D8C0B9CA6F722A57B8BFDFD5E6087\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/CS3451FinalProject -BC:/Users/kayla/CS3451FinalProject/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/kayla/CS3451FinalProject/build/cs3451-computer-graphics.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kayla/Downloads/CS3451FinalProject -BC:/Users/kayla/Downloads/CS3451FinalProject/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/kayla/Downloads/CS3451FinalProject/build/cs3451-computer-graphics.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
